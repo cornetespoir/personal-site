@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=VT323&display=swap"
+        rel="stylesheet">
+    <script>
+        const themed = localStorage.getItem('night-mode');
+        if (themed === "enabled") {
+            sessionStorage.setItem('night-mode', 'enabled');
+            document.documentElement.classList.add('night-mode-theme');
+        }
+    </script>
+    <script src="https://static.tumblr.com/svdghan/gFJrolu7g/daynight.js"></script>
+    <style>
+        :root {
+            --spacing: 1rem;
+            --white: 255, 255, 255;
+            --dark: #222;
+            --background: #ffffff;
+            --text: #0a071b;
+            --containers: #7f88cb;
+
+            --foreground-rgb: 0, 0, 0;
+            --background-start-rgb: 214, 219, 220;
+            --background-end-rgb: 255, 255, 255;
+            --lavender: #fcdfff;
+            --pastel-blue: #B4BDE3;
+            --pastel-pink: #FDE3E6;
+            --salmon: #FD8395ff;
+            --black: #000;
+            --brown: #5C2636ff;
+            --macaroni: #F7BB84ff;
+        }
+
+        .night-mode-theme {
+            --background: #02040b;
+            --text: #fff;
+            --containers: #171c39;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .full {
+            width: 100%;
+        }
+
+        .centered {
+            align-items: center;
+            align-content: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        h1,
+        h2,
+        h3,
+        .buttons a {
+            font-weight: normal;
+            font-family: "VT323", monospace;
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 3.2rem;
+            font-style: normal;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        header {
+            align-items: flex-start;
+            top: 0;
+            background: linear-gradient(to top right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .08)), url(https://64.media.tumblr.com/e8ea3d5d806ed636905aa18b71e4064a/tumblr_o12a1d0r1k1t0co30o1_540.png);
+            background-size: cover;
+            border-bottom: 0;
+            margin: calc(var(--spacing) * 2);
+            border-radius: 1rem;
+            min-height: 50vh;
+            position: relative;
+            padding-bottom: calc(var(--spacing) * 2);
+        }
+
+        header h1 {
+            margin-top: 0;
+        }
+
+        nav {
+            gap: calc(var(--spacing) * 2);
+            background: var(--background);
+            position: relative;
+            height: auto;
+            align-items: center;
+            border-radius: 0 0 1rem 1rem;
+            padding: calc(var(--spacing) / 2) var(--spacing);
+            padding-top: 0;
+        }
+
+        nav:before {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 28px, var(--background) 28px);
+            content: '';
+            width: 28px;
+            right: 0;
+            position: absolute;
+            height: 28px;
+            transform: scaleX(-1) scaleY(-1);
+            top: -1.2px;
+            left: -28px;
+        }
+
+        nav:after {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 30px, var(--background) 30px);
+            content: '';
+            width: 30px;
+            right: 0;
+            position: absolute;
+            height: 30px;
+            transform: scaleY(-1);
+            top: -1.2px;
+            right: -30px;
+        }
+
+        nav a {
+            display: inline-block;
+            z-index: 1;
+            padding: calc(var(--spacing) / 2);
+            border-radius: 2rem;
+        }
+
+        .text-content,
+        .other-content {
+            color: rgb(var(--white));
+            margin-top: calc(var(--spacing) * -1);
+            padding: 0 calc(var(--spacing) * 4)
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        header span:hover {
+            border-bottom: 2px dashed white;
+        }
+
+        header:hover:before {
+            content: 'background from Kirby Mass Attack';
+            position: absolute;
+            bottom: var(--spacing);
+            opacity: .6;
+            color: white;
+            right: var(--spacing);
+        }
+
+        .links {
+            background: var(--background);
+            border-top-right-radius: 2rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+        }
+
+        .links:before {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 30px, var(--background) 30px);
+            content: '';
+            width: 30px;
+            right: 0;
+            position: absolute;
+            height: 30px;
+            top: -30px;
+            left: 0px;
+        }
+
+        .links:after {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 30px, var(--background) 30px);
+            content: '';
+            width: 30px;
+            right: 0;
+            position: absolute;
+            height: 30px;
+            bottom: 0;
+            right: -30px;
+        }
+
+        .links a {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: var(--spacing);
+            align-items: center;
+            border-right: 1px solid #6042685a;
+            justify-content: space-around;
+        }
+
+        .links a:last-of-type {
+            border-right: 0;
+        }
+
+        .links svg {
+            height: 1rem;
+        }
+
+        .indicator {
+            position: absolute;
+            border: 2px solid rgb(157, 183, 231);
+            z-index: 0;
+            width: 70px;
+            display: block;
+            box-shadow: 2px 2px 1rem rgba(100, 148, 237, 0.208);
+            padding: 1rem;
+            left: .8rem;
+            height: 1rem;
+            border-radius: 2rem;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            font-weight: normal;
+        }
+
+        main {
+            position: relative;
+        }
+
+        section {
+            gap: calc(var(--spacing) * 2);
+            position: relative;
+            margin: calc(var(--spacing) * 2);
+            padding: calc(var(--spacing) * 2);
+            padding-left: 0;
+        }
+
+        .preview {
+            width: 100%;
+            overflow: hidden;
+            border-top-right-radius: .6rem;
+            border-top-left-radius: .6rem;
+            height: 30vh;
+            position: relative;
+        }
+
+        .text {
+            padding: var(--spacing) calc(var(--spacing) * 2);
+            transform: translate(0, -2rem);
+            border-top-left-radius: 2rem;
+            background: var(--containers);
+            padding-bottom: 0;
+            width: 100%;
+        }
+
+        .text h3 {
+            margin: 0;
+            padding: calc(var(--spacing) / 2) 0;
+            font-size: 1.8rem;
+
+        }
+
+        .preview:after {
+            content: '';
+            display: block;
+            background: #63699e4c;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .preview:before {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 30px, var(--containers) 30px);
+            content: '';
+            width: 30px;
+            right: 0;
+            position: absolute;
+            height: 30px;
+            transform: scaleX(-1);
+            bottom: 1.86rem;
+            z-index: 1;
+        }
+
+        .preview img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            position: relative;
+        }
+
+        #featured-work article {
+            flex: 33% 0 0;
+            border-radius: .6rem;
+            position: relative;
+            transition: box-shadow .4s;
+            background: var(--containers);
+            box-shadow: 0px 0px 0px 2px rgba(67, 77, 113, .0), 0px 0px 4px 20px rgba(67, 77, 113, .0);
+        }
+
+        #featured-work article:hover {
+            box-shadow: 0px 0px 0px 0px var(--containers), 0px 0px 0px 0px var(--containers) !important;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(20px);
+            transition: .6s;
+            border-radius: 8px;
+            z-index: 2;
+            background: #4651a787;
+        }
+
+        article:hover .buttons {
+            opacity: 1;
+        }
+
+        .buttons a {
+            font-size: 2rem;
+        }
+
+        #featured-work {
+            display: flex;
+            overflow: auto;
+            flex-direction: row;
+        }
+
+        .label {
+            position: absolute;
+            z-index: 3;
+            background: var(--background);
+            padding: var(--spacing);
+            font-size: 1.8rem;
+            top: 0;
+            left: var(--spacing);
+            border-bottom-right-radius: 2rem;
+        }
+
+        .label:before {
+            content:'';
+            position: absolute;
+            display: block;
+            width:calc(100% + 1rem);
+            height: 2rem;
+            top:-2rem;
+            background:var(--background);
+        }
+
+        .label:after {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 30px, var(--background) 30px);
+            content: '';
+            width: 30px;
+            right: 0;
+            position: absolute;
+            height: 30px;
+            transform: scaleY(-1);
+            top: 0px;
+            right: -30px;
+        }
+
+        #daynight-toggle {
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            background: var(--background);
+            right: 0;
+            cursor: pointer;
+            font-size: 1.4rem;
+            padding: var(--spacing);
+            border-bottom-left-radius: 2rem;
+        }
+
+        #daynight-toggle:before {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 30px, var(--background) 30px);
+            content: '';
+            width: 30px;
+            right: 0;
+            position: absolute;
+            height: 30px;
+            top: 0px;
+            left: -28px;
+            transform: scaleX(-1) scaleY(-1);
+        }
+
+        #daynight-toggle:after {
+            background-image: radial-gradient(circle at 100% 0%, transparent 0%, transparent 30px, var(--background) 30px);
+            content: '';
+            width: 30px;
+            right: 0;
+            position: absolute;
+            height: 30px;
+            transform: scaleX(-1) scaleY(-1);
+            bottom: -28px;
+            right: 0px;
+        }
+
+        .toggle {
+            display: block;
+            padding: var(--spacing);
+        }
+
+        .night-mode-theme .toggle:before {
+            content:'🌕'
+        }
+
+        .toggle:before {
+            content:'🌑'
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex space-around">
+        <div id="daynight-toggle" class="flex centered justify-center"><b class="toggle"></b></div>
+        <nav class="flex justify-center">
+            <a>Home</a>
+            <a>About</a>
+            <a href="https://egg.design/tagged/blog">Blog</a>
+        </nav>
+        <div class="flex full space-between centered">
+            <div class="text-content">
+                <h1>Hi! I'm <span>Bridgette</span></h1>
+                <p>I'm a <span>designer</span> and front-end <span>developer</span>.</p>
+            </div>
+            <div class="other-content">
+
+            </div>
+        </div>
+        <div class="links flex">
+            <a href="" target="_blank">Tumblr themes <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+                </svg></a>
+            <a href="" target="_blank">Github <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+                </svg></a>
+            <a href="" target="_blank">Codepen <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+                </svg></a>
+        </div>
+    </header>
+    <main>
+        <h2 class="label">
+            React + API Projects
+        </h2>
+        <section id="featured-work">
+            <article>
+                <div class="preview">
+                    <img
+                        src="https://64.media.tumblr.com/ffa890d287227db5457490c22ef7532d/91fcd4ef5d7d1024-50/s2048x3072/2b9defdb5a6706a8438621939219fb1e95ec4d44.gifv">
+                </div>
+                <div class="text">
+                    <h3>Audio post playlist</h3>
+                    <p>Creates a playlist of all audio posts that belong to a blog using Tumblr's API</p>
+                </div>
+                <div class="buttons flex centered justify-center">
+                    <a>coming soon</a>
+                </div>
+            </article>
+            <article>
+                <div class="preview">
+                    <img src="buildatheme.png">
+                </div>
+                <div class="text" style="width: calc(100% + .2px)">
+                    <h3>Build a Theme</h3>
+                    <p>A theme builder for tumblr themes.</p>
+                </div>
+                <div class="buttons flex centered justify-center">
+                    <a href="https://github.com/cornetespoir/build-a-theme" target="_blank">View on github</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="preview">
+                    <img style="object-position: top;"
+                        src="https://64.media.tumblr.com/54633f119fae71facf53bc1dd43f9c6a/9bdd9f7b87f6c02d-28/s2048x3072/d0b1e98ab5985454bca88afcba92692c5dcc3690.png">
+                </div>
+                <div class="text">
+                    <h3>NPF theme base</h3>
+                    <p>A basic tumblr theme template that supports new post types</p>
+                </div>
+                <div class="buttons flex centered justify-center">
+                    <a href="https://github.com/cornetespoir/npf-theme-base" target="_blank">View on github</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="preview">
+                    <img style="object-position: top;" src="findtags.png">
+                </div>
+                <div class="text">
+                    <h3>Findtags</h3>
+                    <p>An unfiltered (by default) tag search for tumblr posts by getting all posts directly from the API
+                    </p>
+                </div>
+                <div class="buttons flex centered justify-center">
+                    <a href="https://github.com/cornetespoir/findtags-react" target="_blank">View on github</a>
+                </div>
+            </article>
+
+            <!-- <article>
+                <div class="preview">
+                    <img style="object-position: top;"
+                        src="https://64.media.tumblr.com/f22d0b037620f32c086c989aa2d156f6/7922030e85e5765a-55/s2048x3072/5751f5d65d8b834c4446042e738ce44e892ce5cc.png">
+                </div>
+                <div class="text">
+                    <h2>Milk theme</h2>
+                    <p>A tumblr theme featuring a CSS-only milk milk carton</p>
+                </div>
+                <div class="buttons flex centered justify-center">
+                    <a href="https://www.tumblr.com/theme/41285" target="_blank">View theme details</a>
+                </div>
+            </article> -->
+        </section>
+    </main>
+</body>
+<script>
+    const horizontalScrolling = document.querySelector("#featured-work");
+    horizontalScrolling.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        horizontalScrolling.scrollLeft += e.deltaY;
+    });
+</script>
+
+</html>
