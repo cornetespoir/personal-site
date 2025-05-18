@@ -1,0 +1,79 @@
+.header h1 {
+    font-size: 6rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: var(--spacing);
+    width: 100%;
+}
+
+.footer nav {
+    background:  rgba(0,0,0, .4);
+    padding: 0 var(--spacing);
+    backdrop-filter: blur(30px);;
+    margin: var(--spacing);
+    min-width: 480px;
+    border:1px solid rgba(var(--white), .2);
+    border-radius: 3rem;
+    & a {
+        border-radius: 3rem;
+        margin: var(--spacing);
+        padding: .6rem var(--spacing);
+    }
+}
+
+.site {
+    margin: calc(var(--spacing) / 2)!important;
+    background: rgba(96, 93, 252, 0.67)
+}
+
+.about {
+    width: 90%;
+    max-width: 900px;
+    margin: var(--spacing) auto;
+    padding: var(--spacing);
+    border-radius: var(--spacing);
+}
+
+.header {
+    background: linear-gradient(to bottom, #4651a787, var(--background));
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: var(--spacing);
+    height: 50vh;
+}
+
+.section p {
+    padding: var(--spacing) 0 ;
+}
+
+.section {
+    gap: 0;
+}
+.section article {
+    width: 40%;
+    padding: var(--spacing);
+}
+
+.section li, .section ul {
+    margin-left: var(--spacing);
+}
+
+.section .videoContainer {
+    width: 60%;
+    & video {
+        width: 100%;
+    }
+}
+.video {
+    position: absolute;
+    height: 50vh;
+    border-radius: var(--spacing);
+    width: 100%;
+    z-index:-1;
+    overflow: hidden;
+    & video {
+        width: 100%;
+    }
+}
