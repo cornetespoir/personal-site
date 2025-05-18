@@ -30,8 +30,8 @@ export default function Home() {
         </nav>
         <div className='flex full space-between align-center'>
           <div className='text-content'>
-            <h1>Hi! I'm <span>Bridgette</span></h1>
-            <p>I'm a <span>designer</span> and front-end <span>developer</span>.</p>
+            <h1>Hi! I&apos;m <span>Bridgette</span></h1>
+            <p>I&apos;m a <span>designer</span> and front-end <span>developer</span>.</p>
           </div>
           <div className='other-content'>
           </div>
@@ -63,11 +63,12 @@ export default function Home() {
           <article>
             <div className='preview'>
               <img
+                alt='Screenshot of a playlist UI'
                 src='https://64.media.tumblr.com/b8324530d946f5606057179cff71ca12/909224c0fa958c48-ad/s1280x1920/d7ce354284b7bf72bf702ae23b3e5e91044bbc5d.pnj' />
             </div>
             <div className='text'>
               <h3>Maestro</h3>
-              <p>Creates a playlist of all audio posts that belong to a user's blog</p>
+              <p>Creates a playlist of all audio posts that belong to a user&apos;s blog</p>
             </div>
             <div className='buttons flex centered justify-center'>
               <Link href='/project/maestro'>Learn more</Link>
@@ -75,7 +76,7 @@ export default function Home() {
           </article>
           <article>
             <div className='preview'>
-              <img src='buildatheme.png' />
+              <img src='buildatheme.png' alt='Screenshot of a theme customization tool' />
             </div>
             <div className='text'>
               <h3>Build a Theme</h3>
@@ -88,6 +89,7 @@ export default function Home() {
           <article>
             <div className='preview'>
               <img
+                alt='Screenshot of a simple single column tumblr theme'
                 src='https://64.media.tumblr.com/54633f119fae71facf53bc1dd43f9c6a/9bdd9f7b87f6c02d-28/s2048x3072/d0b1e98ab5985454bca88afcba92692c5dcc3690.png' />
             </div>
             <div className='text'>
@@ -100,7 +102,7 @@ export default function Home() {
           </article>
           <article>
             <div className='preview'>
-              <img src='findtags.png' />
+              <img src='findtags.png' alt='Screenshot of a search tool'/>
             </div>
             <div className='text'>
               <h3>Findtags</h3>

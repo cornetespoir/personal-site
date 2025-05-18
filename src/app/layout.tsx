@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 import { Open_Sans, VT323 } from 'next/font/google';
-import Link from 'next/link';
-
+import clsx from 'clsx';
 
 const pixel = VT323({
   weight: '400',
@@ -20,6 +19,10 @@ export const metadata: Metadata = {
   icons: 'https://64.media.tumblr.com/avatar_63ed1d13b42f_512.png'
 };
 
+const bodyClasses = clsx(
+  open.className,
+  `pixel-${pixel.className}`
+)
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={open.className}>
+      <body className={bodyClasses}>
         {children}
       </body>
     </html>
