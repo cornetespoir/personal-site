@@ -27,6 +27,7 @@ export default function Home() {
                 <h1>CSS Gallery</h1>
                 <p>A collection of CSS art</p>
                 <p>Every &quot;image&quot; on this page is 100% CSS. Feel free to inspect the elements to see how it&apos;s made!</p>
+                <p>Since this is a bunch of experimental, non-conventional use cases of CSS, this page is best viewed on desktop 😅</p>
             </header>
 
             <section className={sectionClasses}>
