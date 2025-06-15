@@ -30,6 +30,7 @@ export function PageContents() {
                 </div>
                 <nav className={navClasses}>
                     <Link href='/'>Home</Link>
+                    <Link href='/about'>About</Link>
                     <Link href='https://egg.design/tagged/blog' target='_blank'>Blog</Link>
                 </nav>
                 <div className='flex full space-between align-center'>

@@ -20,7 +20,8 @@ export default function Home() {
                         animations
                     </span> 
                      and other <span className='fun'>fun</span> <span className='interactions'>interactions</span>.
-                </p>        
+                </p>    
+                <a href="/" className={styles.back}>back to the home page</a>    
             </article>
         </section>
     )

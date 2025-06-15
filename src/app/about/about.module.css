@@ -11,7 +11,15 @@
     box-shadow: 0 0 0px 10px rgba(0,0,0, .08);
     line-height: 200%;
     padding: calc(var(--spacing) * 4);
-    background: rgba(0,0,0,.2);
+    background: var(--containers);
     border-radius: var(--spacing)
+  }
+
+  .back {
+    background: var(--containers);
+    padding: var(--spacing);
+    border-radius: .4rem;
+    margin: var(--spacing) 0;
+    display: inline-block;
   }
 }
