@@ -36,8 +36,15 @@ export function PageContents() {
                 </nav>
                 <div className='flex full space-between align-center'>
                     <div className='text-content'>
-                        <h1>Hi! I&apos;m <span>Bridgette</span></h1>
-                        <p>I&apos;m a <span>designer</span> and front-end <span>developer</span>.</p>
+                        <h1>Hi! I&apos;m <span className='confetti'>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            Bridgette</span></h1>
+                        <p>I&apos;m  a front-end developer and designer.</p>
                     </div>
                     <div className='other-content'>
                     </div>
