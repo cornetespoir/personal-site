@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "sdv";
+  src: url("https://dl.dropbox.com/s/sd30f5z9zg7189q/stardew-valley.ttf");
+}
+
+@font-face {
+  font-family: "sdv-t";
+  src: url("https://dl.dropbox.com/s/y96o5nxdeu7pzyi/Stardew_Valley.ttf");
+}
+
+
+.postdate {
+  font-family: sdv;
+  width: 200px;
+  color: #221122;
+  box-shadow: 0 4px #5b2b2a;
+}
+.day,
+.time {
+  background: linear-gradient(
+    to bottom,
+    #ffd787,
+    #ffd787,
+    #ffcf7f,
+    #ffcf7f,
+    #f7c777,
+    #f7c777
+  );
+  border-left: 4px solid #b14e05;
+  text-align: center;
+  line-height: 30px;
+  height: 24px;
+  font-size: 30px;
+  text-shadow: -1px 1px #d5864f, -2px 2px #d5864f, 1px 2px #d5864f,
+    0px 2px #d5864f;
+  border-right: 4px solid #d5864f;
+  box-shadow: 4px 0px #853605;
+}
+
+.dayTop {
+  background: #d5864f;
+  box-shadow: 4px 0px #853605;
+  height: 4px;
+  border-left: 4px solid #b14e05;
+}
+
+.dayBottom {
+  background: #e7a160;
+  height: 4px;
+  border-left: 4px solid #b14e05;
+  border-right: 4px solid #d5864f;
+  box-shadow: 4px 0px #853605;
+}
+
+.dayHat,
+.timehat {
+  width: calc(100% - 10px) !important;
+  height: 4px;
+  margin: auto;
+  background: #853605;
+  box-shadow: 4px 0px #853605;
+}
+
+.timehat {
+  background: #853605;
+  margin-left: 8px;
+  box-shadow: 4px 0 #853605, -4px 0 #853605;
+}
+
+.timetop {
+  background: #d5864f;
+  height: 4px;
+  width: calc(100% - 4px);
+  border-left: 4px solid #b14e05;
+  border-right: 4px solid #b14e05;
+}
+.dayofweek div {
+  width: 100%;
+}
+
+.dayofweek {
+  background: #dc7b05;
+  border-left: 4px solid #b14e05;
+  border-right: 4px solid #dc7b05;
+  padding: 4px 6px 0 6px;
+  box-shadow: 4px 0 #b14e05, 8px 0 #5b2b2a, -4px 0 #5b2b2a;
+}
+
+.timeofday {
+  background: #dc7b05;
+  border-left: 4px solid #b14e05;
+  border-right: 4px solid #dc7b05;
+  padding: 4px 6px 0 6px;
+  box-shadow: 4px 0 #b14e05, 8px 0 #5b2b2a, -4px 0 #5b2b2a;
+}
+
+.dayofweekhat {
+  background: #f7ba00;
+  box-shadow: 0 -4px #853605, 4px 0 #853605;
+  height: 4px;
+  border-left: 4px solid #fa9305;
+  border-right: 4px solid #fa9305;
+}
+
+.dayShoes {
+  background: #b14e05;
+  box-shadow: 4px 0px #5b2b2a;
+  height: 4px;
+  margin: auto;
+}
+
+.timesocks {
+  background: #b14e05;
+  height: 4px;
+  width: calc(100% - 24px);
+  margin: auto;
+  box-shadow: -4px 0 #dc7b05, 4px 0 #dc7b05, -8px 0 #fa9305, 8px 0 #fa9305,
+    -12px 0 #dc7b05, 12px 0 #dc7b05, -16px 0 #5b2b2a, 16px 0 #b14e05,
+    20px 0 #5b2b2a;
+}
+
+.timeankles {
+  background: #dc7b05;
+  height: 4px;
+  width: calc(100% - 24px);
+  margin: auto;
+  box-shadow: -4px 0 #fa9305, 4px 0 #fa9305, -8px 0 #f7ba00, 8px 0 #f7ba00,
+    -12px 0 #fa9305, 12px 0 #fa9305, -16px 0 #5b2b2a, 16px 0 #b14e05,
+    20px 0 #5b2b2a;
+}
+
+.timeshoes {
+  background: #b14e05;
+  height: 4px;
+  width: calc(100% - 24px);
+  margin: auto;
+  box-shadow: -4px 0 #d77605, 4px 0 #d77605, -8px 0 #d77605, 8px 0 #d77605,
+    -12px 0 #b14e05, 12px 0 #b14e05, 16px 0 #5b2b2a;
+}
+
+.holders {
+  height: 8px;
+  position: relative;
+  width: 200px;
+  z-index: 999 !important;
+}
+
+.holders:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  left: 25%;
+  height: 16px;
+  border-top: 4px solid #5b2b2a;
+  border-left: 4px solid #5b2b2a;
+  border-right: 4px solid #5b2b2a;
+  border-bottom: 4px solid #853605;
+  background: linear-gradient(
+    to bottom,
+    #853605 0%,
+    #853605 25%,
+    #dc7b05 25%,
+    #dc7b05 50%,
+    #853605 50%,
+    #853605 75%,
+    #dc7b05 75%,
+    #dc7b05 100%
+  );
+}
+
+.holders:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  left: 75%;
+  height: 16px;
+  border-top: 4px solid #5b2b2a;
+  border-left: 4px solid #5b2b2a;
+  border-right: 4px solid #5b2b2a;
+  background: linear-gradient(
+    to bottom,
+    #853605 0%,
+    #853605 25%,
+    #dc7b05 25%,
+    #dc7b05 50%,
+    #853605 50%,
+    #853605 75%,
+    #dc7b05 75%,
+    #dc7b05 100%
+  );
+  border-bottom: 4px solid #853605;
+}
+
+.notes {
+  width: 150px;
+  margin-left: 26px;
+  position: relative;
+  margin-top: 8px;
+  border-top: 4px solid #853605;
+  border-bottom: 4px solid #853605;
+  box-shadow: -4px 0 #5b2b2a, 4px 0 #5b2b2a;
+}
+
+.notestop {
+  background: #fa9305;
+  height: 4px;
+  box-shadow: -4px 0 #b14e05, 4px 0 #b14e05, -8px 0 #5b2b2a, 8px 0 #5b2b2a,
+    -12px 0 #5b2b2a, 12px 0 #5b2b2a;
+}
+
+.noteshat {
+  background: #fa9305;
+  height: 4px;
+  box-shadow: -4px 0 #ec8805, 4px 0 #ec8805, -8px 0 #ec8805, 8px 0 #ec8805,
+    12px 0 #b14e05, 12px 0 #b14e05, -16px 0 #5b2b2a, 16px 0 #5b2b2a;
+}
+
+.notehead {
+  background: #fa9305;
+  height: 4px;
+  box-shadow: -4px 0 #ec8805, 4px 0 #ec8805, -8px 0 #ec8805, 8px 0 #ec8805,
+    12px 0 #ec8805, 12px 0 #ec8805, -16px 0 #b14e05, 16px 0 #b14e05,
+    -20px 0 #5b2b2a, 20px 0 #5b2b2a;
+}
+
+.noteshair {
+  background: #fa9305;
+  height: 4px;
+  box-shadow: -4px 0 #ec8805, 4px 0 #ec8805, -8px 0 #ec8805, 8px 0 #ec8805,
+    12px 0 #ec8805, 12px 0 #ec8805, -16px 0 #ec8805, 16px 0 #ec8805,
+    -20px 0 #ec8805, 20px 0 #ec8805, -24px 0 #5b2b2a, 24px 0 #5b2b2a;
+}
+
+.notecontent {
+  background: #fa9305;
+  box-shadow: -4px 0 #ec8805, 4px 0 #ec8805, -8px 0 #ec8805, 8px 0 #ec8805,
+    12px 0 #ec8805, 12px 0 #ec8805, -16px 0 #ec8805, 16px 0 #ec8805,
+    -20px 0 #b14e05, 20px 0 #b14e05, -24px 0 #5b2b2a, 24px 0 #5b2b2a;
+  height: 28px;
+}
+
+.thenotes {
+  box-sizing: border-box;
+  width: 109%;
+  margin-left: -4%;
+  position: absolute;
+  border: 4px solid #b14e05;
+  background: #ffd284;
+  height: 32px;
+  line-height: 28px;
+  text-align: right;
+  font-size: 32px;
+  color: #800000;
+  margin-top: 10px;
+  font-family: sdv-t;
+}
