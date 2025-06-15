@@ -1,0 +1,98 @@
+.milk {
+  --milk: white;
+  --milk-accent: #facade;
+  transform: skew(0deg, -7deg);
+  background: var(--milk);
+  position: relative;
+  width: 240px;
+  z-index: 1;
+  filter: drop-shadow(-1px -1px 0px rgba(0, 0, 0, 0.06))
+    drop-shadow(1px -1px 0px rgba(0, 0, 0, 0.06))
+    drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.06))
+    drop-shadow(-1px 1px 0px rgba(0, 0, 0, 0.06));
+  margin-top: 120px;
+  margin-left: 120px;
+  height: 320px;
+  background: linear-gradient(
+    to bottom,
+    var(--milk) 0%,
+    var(--milk) 25%,
+    var(--milk-accent) 25%,
+    var(--milk-accent) 78%,
+    var(--milk) 78%
+  );
+}
+
+.milk:before,
+.milk:after {
+  width: 240px;
+  height: 80px;
+  background: blue;
+  content: "";
+  position: absolute;
+}
+
+.milk:before {
+  height: 315px;
+  width: 70px;
+  background: var(--milk);
+  margin-top: -22px;
+  z-index: 1;
+  filter: brightness(96%);
+  margin-left: -69px;
+  transform: skew(0deg, 38deg);
+  background: linear-gradient(
+    to bottom,
+    var(--milk) 0%,
+    var(--milk) 24%,
+    var(--milk-accent) 24%,
+    var(--milk-accent) 78%,
+    var(--milk) 78%
+  );
+}
+
+.milk:after {
+  background: var(--milk);
+  filter:brightness(96%);
+  transform: skew(19.4deg);
+  margin-top: -75px;
+  margin-left: -12.8px;
+}
+
+.milktop {
+  background: transparent;
+  width: 240px;
+  position: absolute;
+  transform: skew(0deg, 2deg);
+  margin-top: -140px;
+  margin-left: -30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 100px;
+}
+
+.milktop:before {
+  background: var(--milk);
+  width: 239.2px;
+  position: absolute;
+  margin-top: 17px;
+  content: "";
+  margin-left: 2px;
+  transform: skew(0deg, -2deg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50px;
+}
+
+.milktop:after {
+  background: var(--milk);
+  filter:brightness(90%);
+  content: "";
+  position: absolute;
+  width: 70px;
+  z-index: -7;
+  height: 60px;
+  margin-top: 70px;
+  margin-left: -12px;
+  transform: skew(-45deg, 35deg) rotate(10deg);
+}

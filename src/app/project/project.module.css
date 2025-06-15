@@ -6,6 +6,7 @@
     position: fixed;
     bottom: var(--spacing);
     width: 100%;
+    z-index: 9;
 }
 
 .footer nav {
@@ -48,8 +49,15 @@
     padding: var(--spacing) 0 ;
 }
 
+.push {
+    justify-content: center;
+    text-align: center;
+}
+
 .section {
     gap: 0;
+    width: 90%;
+    margin: auto;
 }
 .section article {
     width: 40%;
@@ -62,6 +70,9 @@
 
 .section .videoContainer {
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     & video {
         width: 100%;
     }

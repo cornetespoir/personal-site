@@ -1,0 +1,187 @@
+.kirby:hover .fade {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.kirby {
+  position: relative;
+  animation: flap 3s infinite;
+  transform: scale(0.8) translate(-20px, 0);
+}
+
+@keyframes flap {
+  0% {
+  }
+
+  50% {
+    transform: scale(0.812) translate(-20px, -20px);
+  }
+
+  100% {
+  }
+}
+
+.body {
+  width: 300px;
+  position: relative;
+  height: 300px;
+  background: #facade;
+  border-radius: 100%;
+}
+
+.arm.right {
+  width: 100px;
+  position: absolute;
+  right: -30px;
+  top: 20px;
+  transform: rotate(-30deg);
+  height: 90px;
+  background: #facade;
+  border-radius: 80%;
+  animation: flapright 3s infinite;
+}
+
+@keyframes flapright {
+  50% {
+    transform: rotate(-30deg) translate(0, -10px);
+  }
+
+  100% {
+  }
+}
+
+@keyframes flapleft {
+
+  50% {
+    transform: rotate(30deg) translate(0, -10px);
+  }
+
+  100% {
+  }
+}
+.arm.left {
+  width: 100px;
+  position: absolute;
+  left: -20px;
+  top: 30px;
+  transform: rotate(30deg);
+  height: 90px;
+  z-index: -1;
+  background: #eea8c4;
+  border-radius: 80%;
+  animation: flapleft 3s infinite;
+}
+
+.eye {
+  width: 25px;
+  height: 60px;
+
+  position: absolute;
+  left: 46%;
+  top: 24%;
+  margin-left: -20px;
+  border-radius: 50%;
+  background: #222;
+  z-index: 1;
+}
+
+.eye.left {
+  margin-left: -84px;
+}
+
+.pupil {
+  height: 30px;
+  width: 70%;
+  color: white;
+
+  transform: translate(0px, 3px);
+  border-radius: 100%;
+  z-index: 9;
+  background: white;
+}
+.bottom {
+  width: 90%;
+  background: linear-gradient(
+    to top,
+    mediumslateblue,
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
+  height: 94%;
+  z-index: -1;
+  transform: translate(1px, 0);
+  top: 0px;
+  border-radius: 50%;
+  position: absolute;
+}
+.feet {
+  width: 180px;
+  position: absolute;
+  height: 100px;
+  right: -70px;
+  bottom: 20px;
+  z-index: -1;
+  box-shadow: 0 -90px #7b2c49;
+  transform: rotate(-110deg);
+  border-radius: 300px / 200%;
+  background: crimson;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 32.4%;
+  transform: translateX(-50%) translateY(-48%);
+  width: 40px;
+  height: 35px;
+  border-radius: 0 0 40px 40px;
+  border: 3px solid #000;
+  border-color: transparent transparent #000 transparent;
+}
+
+.cheek {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  top: 43%;
+  left: 44%;
+
+  border-radius: 30px;
+  background: radial-gradient(red, transparent, transparent);
+  opacity: 0.26;
+}
+.cheek:before {
+  position: absolute;
+  height: 100%;
+  content: "";
+  left: -124px;
+  width: 90%;
+  border-radius: 30px;
+  background: radial-gradient(red, transparent, transparent);
+}
+
+.description {
+  opacity: 0;
+  position: absolute;
+  width: 200px;
+  overflow: auto;
+  z-index: 9;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 250px;
+  margin-top: 10%;
+  margin-left: 16%;
+  text-align: center;
+  font-size: 1.12em;
+}
+
+.kirby:hover .description {
+  opacity: 1;
+  transition: 0.6s;
+}
