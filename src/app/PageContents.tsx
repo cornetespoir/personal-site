@@ -15,7 +15,7 @@ export function PageContents() {
         featuredWorkRef.current.scrollLeft += e.deltaY;
     }
     const headerClasses = clsx(
-        'flex space-around',
+        'main-header flex space-around',
         styles.header
     )
     const navClasses = clsx(

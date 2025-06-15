@@ -582,13 +582,6 @@ footer nav a {
     font-size: 2rem;
   }
 
-  header {
-    margin: var(--spacing)!important;
-    text-align: center;
-    border-radius: 0;
-    min-height: 40vh !important;
-  }
-
   .text-content {
     padding: calc(var(--spacing) * 2);
   }
@@ -614,6 +607,10 @@ footer nav a {
   article {
     margin: var(--spacing);
     text-align: center;
+    width: 100%!important;
+  }
+
+  #featured-work article {
     margin-left:-5%;
     width: 120% !important;
   }

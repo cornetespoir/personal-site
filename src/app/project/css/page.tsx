@@ -4,8 +4,13 @@ import clsx from "clsx";
 import { Kirby } from "./Kirby";
 import { Milk } from "./Milk";
 import { Stardew } from "./Stardew";
-import { Riddler } from "./Riddler";
+// import { Riddler } from "./Riddler";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'Project: CSS Art',
+  description: 'A gallery of CSS illustrations',
+}
 export default function Home() {
 
     const headerClasses = clsx(
@@ -58,7 +63,7 @@ export default function Home() {
                     <p>A simple isometric Milk carton</p>
                 </article>
             </section>
-            <section className={sectionClasses}>
+            {/* <section className={sectionClasses}>
                 <article className={styles.push}>
                     <h2>Riddler</h2>
                     <p>An attempt to recreate how he was seen in batman the animated series</p>
@@ -66,7 +71,7 @@ export default function Home() {
                 <div className={styles.videoContainer}>
                     <Riddler />
                 </div>
-            </section>
+            </section> */}
             </div>
             <footer className={footerClasses}>
                 <nav className='flex align-center space-between'>

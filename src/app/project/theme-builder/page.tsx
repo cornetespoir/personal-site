@@ -1,6 +1,12 @@
 import Link from "next/link";
 import styles from '../project.module.css'
 import clsx from "clsx";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Project: Theme builder',
+  description: 'Build and customize a tumblr theme without writing code',
+}
 
 export default function Home() {
 

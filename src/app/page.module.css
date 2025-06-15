@@ -102,3 +102,13 @@
   color: white;
   right: var(--spacing);
 }
+
+@media screen and (max-width: 700px) {
+  .header {
+    margin: var(--spacing)!important;
+    text-align: center;
+    border-radius: 0;
+    min-height: 40vh !important;
+  }
+
+}
