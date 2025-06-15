@@ -21,7 +21,7 @@ export const projects = [
         url: 'https://github.com/cornetespoir/npf-theme-base'
     },
     {
-        image: 'fhttps://64.media.tumblr.com/31786906ed286c0edbd4183a82ef4d62/4b8a757f84bd9c0e-e5/s1280x1920/a0f9a00a830c0c165342d8b5a0788424ca9f8c84.pnj',
+        image: 'https://64.media.tumblr.com/31786906ed286c0edbd4183a82ef4d62/4b8a757f84bd9c0e-e5/s1280x1920/a0f9a00a830c0c165342d8b5a0788424ca9f8c84.pnj',
         altText: 'Screenshot of a search tool',
         title: 'Findtags',
         description: 'An unfiltered (by default) tag search for tumblr posts by getting all posts directly from the API',

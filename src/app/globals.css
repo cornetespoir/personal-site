@@ -583,7 +583,9 @@ footer nav a {
   }
 
   header {
+    margin: var(--spacing)!important;
     text-align: center;
+    border-radius: 0;
     min-height: 40vh !important;
   }
 
@@ -600,11 +602,10 @@ footer nav a {
 }
 
   .links a {
-    gap: 0;
-    padding: var(--spacing) 0.4rem;
+    padding: var(--spacing);
     border-right: 0;
   }
-  .links a:last-of-type {
+  .links a:last-of-type, .links a:first-of-type{
     display: none;
   }
 
@@ -613,7 +614,8 @@ footer nav a {
   article {
     margin: var(--spacing);
     text-align: center;
-    width: 100% !important;
+    margin-left:-5%;
+    width: 120% !important;
   }
 
   footer nav {
