@@ -1,0 +1,17 @@
+.about {
+   article {
+    width: 700px;
+    margin: auto;
+   }
+   h1 {
+    transform: translate(-1rem, 1.8rem);
+   }
+  article p {
+    margin-bottom: var(--spacing);
+    box-shadow: 0 0 0px 10px rgba(0,0,0, .08);
+    line-height: 200%;
+    padding: calc(var(--spacing) * 4);
+    background: rgba(0,0,0,.2);
+    border-radius: var(--spacing)
+  }
+}

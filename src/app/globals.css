@@ -18,7 +18,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root{
     --background: #0f0f2a;
     --text: #fff;
     --containers: #1c2244;
@@ -41,6 +41,98 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+.confetti {
+  margin: 0 4px;
+  position: relative;
+  border-bottom: 2px dashed white;
+}
+
+.confetti:hover i {
+  animation: bang 1s ease-out forwards;
+}
+
+.confetti i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    opacity: 0;
+    height: 5px;
+    background: red;
+}
+
+.confetti:hover i:nth-of-type(1) {
+  transform: translate3d(24px, -10px, 0) rotate(79deg);
+  background: tomato;
+}
+.confetti i:nth-of-type(2) {
+  transform: translate3d(37px, -14px, 0) rotate(58deg);
+  background: mediumaquamarine;
+}
+.confetti i:nth-of-type(3) {
+  transform: translate3d(-40px, -14px, 0) rotate(329deg);
+  background: peachpuff;
+}
+.confetti i:nth-of-type(4) {
+  transform: translate3d(-36px, -10px, 0) rotate(345deg);
+  background: skyblue;
+}
+.confetti i:nth-of-type(5) {
+  transform: translate3d(-26px, -10px, 0) rotate(329deg);
+  background: slateblue;
+}
+.confetti i:nth-of-type(6) {
+  transform: translate3d(0px, -18px, 0) rotate(345deg);
+  background: goldenrod;
+}
+
+@keyframes bang {
+  from {
+    transform: scale(1.12) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
+.fun, .interactions {
+  position: relative;
+  border-bottom: 1px solid var(--text);
+}
+.fun:hover + .interactions {
+  color: tomato;
+}
+
+.fun:hover + .interactions:before, .fun:has(+ .interactions:hover):before {
+  content:'';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  background:linear-gradient(-45deg,salmon,#6495ed);
+  background-size:400% 400%;
+  animation:gradient 6s ease infinite
+}
+
+@keyframes gradient {
+  0% {
+    background-position:0 50%
+  }
+  50% {
+    background-position:100% 50%
+  }
+  to {
+    background-position:0 50%
+  }
+}
+
+.fun:has(+ .interactions:hover) {
+  color: skyblue;
 }
 
 * {
@@ -129,6 +221,16 @@ img {
   display: block;
 }
 
+.sr-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
 
 .text-content,
 .other-content {
@@ -144,7 +246,6 @@ header p {
 header span:hover {
   border-bottom: 2px dashed white;
 }
-
 
 .links {
   background: var(--background);
@@ -304,6 +405,26 @@ section {
     0px 0px 4px 20px rgba(67, 77, 113, 0);
 }
 
+#featured-work:before,
+#featured-work:after {
+  content: "";
+  height: 100%;
+  pointer-events: none;
+  top: 0;
+  left: 0rem;
+  display: block;
+  position: sticky;
+  width: 150px;
+  margin-right: -180px;
+  background: linear-gradient(to left, transparent, var(--background));
+  z-index: 2;
+}
+
+#featured-work:after {
+  background: linear-gradient(to right, transparent, var(--background));
+  right: -2rem;
+}
+
 #featured-work article:hover {
   box-shadow: 0px 0px 0px 0px var(--containers),
     0px 0px 0px 0px var(--containers) !important;
@@ -336,10 +457,12 @@ article:hover .buttons {
 }
 
 #featured-work {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   overflow-x: auto;
+  overflow-y: hidden;
   height: 60vh;
   overscroll-behavior: contain;
 }
@@ -385,6 +508,7 @@ article:hover .buttons {
 #daynight-toggle {
   position: absolute;
   width: 3rem;
+  border: 0;
   height: 3rem;
   background: var(--background);
   right: 0;
@@ -433,7 +557,7 @@ article:hover .buttons {
   padding: var(--spacing);
 }
 
-.night-mode-theme .toggle:before {
+.dark-mode-theme .toggle:before {
   content: "🌕";
 }
 
@@ -441,9 +565,9 @@ article:hover .buttons {
   content: "🌑";
 }
 
-  footer nav a {
-    color: white;
-  }
+footer nav a {
+  color: white;
+}
 
 @media screen and (max-width: 700px) {
   #featured-work article {
@@ -456,7 +580,7 @@ article:hover .buttons {
 
   header {
     text-align: center;
-    min-height: 40vh!important;
+    min-height: 40vh !important;
   }
 
   .text-content {
@@ -468,27 +592,29 @@ article:hover .buttons {
 
   .links a {
     gap: 0;
-    padding: var(--spacing) .4rem;
+    padding: var(--spacing) 0.4rem;
     border-right: 0;
   }
   .links a:last-of-type {
     display: none;
   }
 
-  section article, section > *, article {
+  section article,
+  section > *,
+  article {
     margin: var(--spacing);
     text-align: center;
     width: 100% !important;
   }
 
   footer nav {
-    min-width: auto!important;
-    width: 90vw!important;
-    padding:0 !important;
+    min-width: auto !important;
+    width: 90vw !important;
+    padding: 0 !important;
     gap: 0;
     & a {
-      margin: .4rem!important;
-      padding: .4rem!important;
+      margin: 0.4rem !important;
+      padding: 0.4rem !important;
     }
   }
 }

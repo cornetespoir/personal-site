@@ -28,8 +28,8 @@ export default function Home() {
             </header>
             <article className={styles.about}>
                 <h2>About Maestro</h2>
-                <p>Maestro came about upon realizing that existing tumblr blog playlist makers were not built to support the <Link href='https://www.tumblr.com/docs/npf' target='_blank'>Neue Post Format</Link>, meaning all posts made after around 2023 would not be formatted correctly. </p>
-                <p>So, I took matters into my own hands.</p>
+                <p>Maestro came about upon realizing that existing tumblr blog playlist makers were not built to support the <Link href='https://www.tumblr.com/docs/npf' target='_blank'>Neue Post Format</Link>, meaning all posts made after around 2023 would no longer work.</p>
+                <p>These playlist makers were very nostalgic for me, and I wanted to keep them going with modern tumblr posts.</p>
             </article>
 
             <section className={sectionClasses}>
