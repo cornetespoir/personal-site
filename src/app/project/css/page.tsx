@@ -48,6 +48,7 @@ export default function Home() {
                     <Kirby />
                 </div>
             </section>
+            <div className='hide-on-mobile'>
             <section className={sectionClasses}>
                 <div className={styles.videoContainer}>
                     <Milk />
@@ -57,7 +58,6 @@ export default function Home() {
                     <p>A simple isometric Milk carton</p>
                 </article>
             </section>
-
             <section className={sectionClasses}>
                 <article className={styles.push}>
                     <h2>Riddler</h2>
@@ -67,6 +67,7 @@ export default function Home() {
                     <Riddler />
                 </div>
             </section>
+            </div>
             <footer className={footerClasses}>
                 <nav className='flex align-center space-between'>
                     <Link href='/'>Back</Link>

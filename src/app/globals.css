@@ -574,6 +574,10 @@ footer nav a {
     width: 90%;
   }
 
+  .hide-on-mobile {
+    display: none;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -589,6 +593,11 @@ footer nav a {
   #daynight-toggle {
     display: none;
   }
+
+  #featured-work:before,
+#featured-work:after {
+  display: none!important
+}
 
   .links a {
     gap: 0;
