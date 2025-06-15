@@ -8,7 +8,7 @@ export const projects = [
     },
     {
         title: 'Theme Builder',
-        image: 'buildatheme.png',
+        image: 'https://64.media.tumblr.com/636df51276ec5368a56dd33120a077d1/4b8a757f84bd9c0e-f4/s1280x1920/0e1d478f164c69f5cba9cb841bfbce57df99d59e.pnj',
         altText: 'Screenshot of a theme customization tool',
         url: '/project/theme-builder',
         description: 'Build and customize a tumblr theme without writing any code'
