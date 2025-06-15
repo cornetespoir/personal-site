@@ -26,7 +26,7 @@ export default function Home() {
             <header className={headerClasses}>
                 <h1>CSS Gallery</h1>
                 <p>A collection of CSS art</p>
-                <p>Every "image" on this page is 100% CSS. Feel free to inspect the elements to see how it's made!</p>
+                <p>Every "image" on this page is 100% CSS. Feel free to inspect the elements to see how it&apos;s made!</p>
             </header>
 
             <section className={sectionClasses}>

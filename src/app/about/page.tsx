@@ -19,7 +19,7 @@ export default function Home() {
                     </span> 
                      and other <span className='fun'>fun</span> <span className='interactions'>interactions</span>.
                      <br/>
-                     When I'm not coding, I like playing video games, reading comics, and drawing.
+                     When I&apos;m not coding, I like playing video games, reading comics, and drawing.
                 </p>    
                 <Link href="/" className={styles.back}>back to the home page</Link>    
             </article>
