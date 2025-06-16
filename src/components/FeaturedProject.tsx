@@ -9,7 +9,7 @@ interface FeaturedProjectProps {
 export function FeaturedProject({
     project
 }: FeaturedProjectProps): ReactElement | null {
-    const {title, altText, image, url, description} = project
+    const {title, altText, image, url, description, emoji} = project
     const isExternalLink = url?.includes('https://')
 
     if (url?.trim() === '' || url == null) {
@@ -17,6 +17,7 @@ export function FeaturedProject({
     }
     return (
         <article>
+            <div className='emoji'><span>{emoji}</span></div>
             <div className='preview'>
                 <img alt={altText} src={image} />
             </div>

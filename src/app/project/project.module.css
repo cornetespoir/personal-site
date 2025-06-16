@@ -57,10 +57,11 @@
 .section {
     gap: 0;
     width: 90%;
+    justify-content: space-between;
     margin: auto;
 }
 .section article {
-    width: 40%;
+    width: 46%;
     padding: var(--spacing);
 }
 
@@ -69,7 +70,8 @@
 }
 
 .section .videoContainer {
-    width: 60%;
+    width: 50%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items:center;

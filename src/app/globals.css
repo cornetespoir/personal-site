@@ -395,6 +395,67 @@ section {
   position: relative;
 }
 
+
+.emoji {
+  position: absolute;
+  opacity:0;
+  transition: .6s;
+  right: 1rem;
+  top: 1rem;
+  font-size:3.2rem;
+}
+
+article:hover .emoji {
+  animation: enter 1s 1, bounce 3s infinite;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: scale(1.2)
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+.emoji span {
+  transition: .6s;
+  display: block;
+  animation:bounce 3.2s infinite;
+}
+
+
+article .emoji span{
+  transform: rotate(-20deg)
+}
+
+article:nth-of-type(2) .emoji span{
+  transform: rotate(30deg)
+}
+
+article:nth-of-type(3) .emoji span {
+  transform: rotate(-10deg)
+}
+
+article:nth-of-type(4) .emoji span {
+  transform: rotate(20deg)
+}
+
+@keyframes bounce {
+  50% {
+       transform:translateY(-4px) scale(1.02);
+  }
+  
+}
+
+
+#featured-work article:hover .emoji{
+  opacity: 1;
+  z-index: 4;
+}
+
 #featured-work article {
   width: 33%;
   border-radius: 0.6rem;
@@ -567,6 +628,27 @@ article:hover .buttons {
 
 footer nav a {
   color: white;
+}
+
+.video-button {
+  cursor: pointer;
+  position: absolute;
+  left:  1rem;
+  top: 1rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border-radius: .4rem;
+  opacity: .4;
+  background:rgba(96, 93, 252, 1);
+  padding: calc(var(--spacing) / 2);
+  border: none;
+
+}
+
+
+
+div:hover:has(.video-button) .video-button {
+  opacity: 1;
 }
 
 @media screen and (max-width: 700px) {

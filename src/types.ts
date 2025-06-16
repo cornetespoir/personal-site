@@ -3,5 +3,6 @@ export interface Project {
     image?: string
     altText?: string
     url?: string
-    description?: string
+    description?: string,
+    emoji?: string
 }

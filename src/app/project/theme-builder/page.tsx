@@ -2,10 +2,11 @@ import Link from "next/link";
 import styles from '../project.module.css'
 import clsx from "clsx";
 import { Metadata } from "next";
+import { Video } from "@/components/Video";
 
 export const metadata: Metadata = {
-  title: 'Project: Theme builder',
-  description: 'Build and customize a tumblr theme without writing code',
+    title: 'Project: Theme builder',
+    description: 'Build and customize a tumblr theme without writing code',
 }
 
 export default function Home() {
@@ -46,14 +47,10 @@ export default function Home() {
                         <li>Chang the location of the title, description, and navigation</li>
                     </ul>
                 </article>
-                <div className={styles.videoContainer}>
-                    <video src='/theme-options.mp4' muted autoPlay loop />
-                </div>
+                <Video src='/theme-options.mp4' className={styles.videoContainer} />
             </section>
             <section className={sectionClasses}>
-                <div className={styles.videoContainer}>
-                    <video src='/post-options.mp4' muted autoPlay loop />
-                </div>
+                <Video src='/post-options.mp4' className={styles.videoContainer} />
                 <article>
                     <h2>Post options</h2>
                     <p>You can set your theme to use 400, 540, and 700px wide posts (as per Tumblr&apos;s media blocks), change the location of the post information, enable like and reblog buttons, and change the style of pinned posts.</p>

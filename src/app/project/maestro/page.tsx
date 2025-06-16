@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from '../project.module.css'
 import clsx from "clsx";
 import { Metadata } from "next";
+import { Video } from "@/components/Video";
 
 export const metadata: Metadata = {
   title: 'Project: Maestro',
@@ -36,18 +37,27 @@ export default function Home() {
                 <p>These playlist makers were very nostalgic for me, and I wanted to keep them going with modern tumblr posts.</p>
             </article>
 
+            
             <section className={sectionClasses}>
                 <article>
-                    <h2>Features</h2>
+                    <h2>Animation and interaction highlights</h2>
+                    <p>From a "turning" disk to pulsing touch animations, I wanted to make the playlist fun to interact with and look at outside of just playing audio.</p>
+                </article>
+                    <Video src='/maestro-animations.mp4' className={styles.videoContainer} />
+            </section>
+
+            <section className={sectionClasses}>
+                <Video src='/maestro-demo.mp4' className={styles.videoContainer} />
+                <article>
+                    <h2>Other features</h2>
                     <ul>
-                        <li>Supports legacy and NPF posts</li>
+                        <li>Supports legacy and NPF posts
+                            <ul><li>Both post types are structured entirely differently, making it a fun challenge to keep them consistent.</li></ul>
+                        </li>
                         <li>Keyboard navigation between tracks</li>
                         <li>Pagination between blog pages</li>
                     </ul>
                 </article>
-                <div className={styles.videoContainer}>
-                    <video src='/maestro-demo.mp4' muted autoPlay loop />
-                </div>
             </section>
             <footer className={footerClasses}>
                 <nav className='flex align-center space-between'>
