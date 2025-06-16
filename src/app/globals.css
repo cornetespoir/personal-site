@@ -4,7 +4,7 @@
   --dark: #222;
   --background: #ffffff;
   --text: #0a071b;
-  --containers: #7f88cb;
+  --containers: #909ae8;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -50,6 +50,11 @@ body {
   border-bottom: 2px dashed white;
 }
 
+article .confetti {
+    display: inline-block;
+    line-height: 140%;
+}
+
 .confetti:hover i {
   animation: bang 1s ease-out forwards;
 }
@@ -92,7 +97,7 @@ body {
 
 @keyframes bang {
   from {
-    transform: scale(1.12) translate3d(0, 0, 0);
+    transform: scale(1.6) translate3d(0, 0, 0);
     opacity: 1;
   }
 }
