@@ -47,6 +47,9 @@ export function PageContents() {
                         <p>I&apos;m  a front-end developer and designer.</p>
                     </div>
                     <div className='other-content'>
+                        <div className='little-guy'>
+                            <div className='little-guy-pixel'></div>
+                        </div>
                     </div>
                 </div>
                 <div className='links flex'>

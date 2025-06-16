@@ -232,6 +232,9 @@ img {
   position: absolute;
 }
 
+.other-content {
+  width: 40%;
+}
 .text-content,
 .other-content {
   color: rgb(var(--white));
@@ -426,6 +429,94 @@ article:hover .emoji {
   animation:bounce 3.2s infinite;
 }
 
+
+.little-guy-pixel {
+  width: 1px;
+  height: 1px;
+  margin-left:2px;
+  background: transparent;
+  box-shadow: 18px 1px #000000, 26px 1px #000000, 17px 2px #000000, 18px 2px white, 19px 2px #000000, 25px 2px #000000, 26px 2px white, 27px 2px #000000, 16px 3px #000000, 17px 3px white, 18px 3px white, 19px 3px #000000, 25px 3px #000000, 26px 3px white, 27px 3px white, 28px 3px #000000, 15px 4px #000000, 16px 4px white, 17px 4px white, 18px 4px white, 19px 4px white, 20px 4px #000000, 24px 4px #000000, 25px 4px white, 26px 4px white, 27px 4px white, 28px 4px white, 29px 4px #000000, 14px 5px #000000, 15px 5px white, 16px 5px white, 17px 5px white, 18px 5px #ff6c6c, 19px 5px white, 20px 5px #000000, 24px 5px #000000, 25px 5px white, 26px 5px #ff6c6c, 27px 5px white, 28px 5px white, 29px 5px white, 30px 5px #000000, 13px 6px #000000, 14px 6px white, 15px 6px white, 16px 6px white, 17px 6px #ff6c6c, 18px 6px #ff6c6c, 19px 6px white, 20px 6px #000000, 21px 6px #000000, 22px 6px #000000, 23px 6px #000000, 24px 6px #000000, 25px 6px white, 26px 6px #ff6c6c, 27px 6px #ff6c6c, 28px 6px white, 29px 6px white, 30px 6px #000000, 12px 7px #000000, 13px 7px white, 14px 7px white, 15px 7px white, 16px 7px white, 17px 7px white, 18px 7px white, 19px 7px white, 20px 7px white, 21px 7px white, 22px 7px white, 23px 7px white, 24px 7px white, 25px 7px white, 26px 7px white, 27px 7px white, 28px 7px white, 29px 7px white, 30px 7px white, 31px 7px #000000, 12px 8px #000000, 13px 8px white, 14px 8px white, 15px 8px white, 16px 8px white, 17px 8px white, 18px 8px white, 19px 8px white, 20px 8px white, 21px 8px white, 22px 8px white, 23px 8px white, 24px 8px white, 25px 8px white, 26px 8px white, 27px 8px white, 28px 8px white, 29px 8px white, 30px 8px white, 31px 8px #000000, 11px 9px #000000, 12px 9px white, 13px 9px white, 14px 9px white, 15px 9px #000000, 16px 9px #000000, 17px 9px white, 18px 9px white, 19px 9px white, 20px 9px white, 21px 9px white, 22px 9px white, 23px 9px white, 24px 9px white, 25px 9px white, 26px 9px #000000, 27px 9px #000000, 28px 9px white, 29px 9px white, 30px 9px white, 31px 9px white, 32px 9px #000000, 11px 10px #000000, 12px 10px white, 13px 10px white, 14px 10px white, 15px 10px #000000, 16px 10px #000000, 17px 10px #000000, 18px 10px white, 19px 10px white, 20px 10px white, 21px 10px white, 22px 10px white, 23px 10px white, 24px 10px white, 25px 10px #000000, 26px 10px #000000, 27px 10px #000000, 28px 10px white, 29px 10px white, 30px 10px white, 31px 10px white, 32px 10px #000000, 11px 11px #000000, 12px 11px white, 13px 11px white, 14px 11px white, 15px 11px var(--cry), 16px 11px #000000, 17px 11px #000000, 18px 11px white, 19px 11px white, 20px 11px white, 21px 11px white, 22px 11px white, 23px 11px white, 24px 11px white, 25px 11px #000000, 26px 11px #000000, 27px 11px var(--cry), 28px 11px white, 29px 11px white, 30px 11px white, 31px 11px white, 32px 11px #000000, 11px 12px #000000, 12px 12px white, 13px 12px white, 14px 12px white, 15px 12px var(--cry), 16px 12px white, 17px 12px white, 18px 12px white, 19px 12px white, 20px 12px #000000, 21px 12px #000000, 22px 12px #000000, 23px 12px white, 24px 12px white, 25px 12px white, 26px 12px white, 27px 12px var(--cry), 28px 12px white, 29px 12px white, 30px 12px white, 31px 12px white, 32px 12px #000000, 11px 13px #000000, 12px 13px white, 13px 13px var(--loved), 14px 13px var(--loved), 15px 13px var(--lovedOrCry), 16px 13px white, 17px 13px white, 18px 13px white, 19px 13px white, 20px 13px white, 21px 13px #000000, 22px 13px white, 23px 13px white, 24px 13px white, 25px 13px white, 26px 13px white, 27px 13px var(--lovedOrCry), 28px 13px var(--loved), 29px 13px var(--loved), 30px 13px white, 31px 13px white, 32px 13px #000000, 10px 14px #000000, 11px 14px white, 12px 14px white, 13px 14px var(--loved), 14px 14px var(--loved), 15px 14px var(--lovedOrCry), 16px 14px white, 17px 14px white, 18px 14px white, 19px 14px white, 20px 14px #000000, 21px 14px white, 22px 14px #000000, 23px 14px white, 24px 14px white, 25px 14px white, 26px 14px white, 27px 14px var(--lovedOrCry), 28px 14px var(--loved), 29px 14px var(--loved), 30px 14px white, 31px 14px white, 32px 14px white, 33px 14px #000000, 10px 15px #000000, 11px 15px white, 12px 15px white, 13px 15px white, 14px 15px white, 15px 15px var(--cry), 16px 15px white, 17px 15px white, 18px 15px #000000, 19px 15px #000000, 20px 15px white, 21px 15px white, 22px 15px white, 23px 15px #000000, 24px 15px #000000, 25px 15px white, 26px 15px white, 27px 15px var(--cry), 28px 15px white, 29px 15px white, 30px 15px white, 31px 15px white, 32px 15px white, 33px 15px #000000, 11px 16px #000000, 12px 16px white, 13px 16px white, 14px 16px white, 15px 16px var(--cry), 16px 16px white, 17px 16px white, 18px 16px white, 19px 16px white, 20px 16px white, 21px 16px white, 22px 16px white, 23px 16px white, 24px 16px white, 25px 16px white, 26px 16px white, 27px 16px var(--cry), 28px 16px white, 29px 16px white, 30px 16px white, 31px 16px white, 32px 16px #000000, 12px 17px #000000, 13px 17px #000000, 14px 17px white, 15px 17px var(--cry), 16px 17px white, 17px 17px white, 18px 17px white, 19px 17px white, 20px 17px white, 21px 17px white, 22px 17px white, 23px 17px white, 24px 17px white, 25px 17px white, 26px 17px white, 27px 17px var(--cry), 28px 17px white, 29px 17px white, 30px 17px #000000, 31px 17px #000000, 14px 18px #000000, 15px 18px var(--cry), 16px 18px white, 17px 18px white, 18px 18px white, 19px 18px white, 20px 18px white, 21px 18px white, 22px 18px white, 23px 18px white, 24px 18px white, 25px 18px white, 26px 18px white, 27px 18px var(--cry), 28px 18px white, 29px 18px #000000, 15px 19px #000000, 16px 19px #000000, 17px 19px white, 18px 19px white, 19px 19px white, 20px 19px white, 21px 19px white, 22px 19px white, 23px 19px white, 24px 19px white, 25px 19px white, 26px 19px white, 27px 19px #000000, 28px 19px #000000, 15px 20px #000000, 16px 20px white, 17px 20px white, 18px 20px white, 19px 20px white, 20px 20px white, 21px 20px white, 22px 20px white, 23px 20px white, 24px 20px white, 25px 20px white, 26px 20px white, 27px 20px white, 28px 20px #000000, 14px 21px #000000, 15px 21px white, 16px 21px white, 17px 21px white, 18px 21px white, 19px 21px var(--loved), 20px 21px var(--loved), 21px 21px white, 22px 21px white, 23px 21px var(--loved), 24px 21px var(--loved), 25px 21px white, 26px 21px white, 27px 21px white, 28px 21px white, 29px 21px #000000, 13px 22px #000000, 14px 22px white, 15px 22px white, 16px 22px white, 17px 22px white, 18px 22px white, 19px 22px var(--loved), 20px 22px var(--loved), 21px 22px var(--loved), 22px 22px var(--loved), 23px 22px var(--loved), 24px 22px var(--loved), 25px 22px white, 26px 22px white, 27px 22px white, 28px 22px white, 29px 22px white, 30px 22px #000000, 12px 23px #000000, 13px 23px white, 14px 23px white, 15px 23px white, 16px 23px #000000, 17px 23px white, 18px 23px white, 19px 23px var(--loved), 20px 23px var(--loved), 21px 23px var(--loved), 22px 23px var(--loved), 23px 23px var(--loved), 24px 23px var(--loved), 25px 23px white, 26px 23px white, 27px 23px #000000, 28px 23px white, 29px 23px white, 30px 23px white, 31px 23px #000000, 12px 24px #000000, 13px 24px white, 14px 24px white, 15px 24px #000000, 16px 24px #000000, 17px 24px white, 18px 24px white, 19px 24px white, 20px 24px var(--loved), 21px 24px var(--loved), 22px 24px var(--loved), 23px 24px var(--loved), 24px 24px white, 25px 24px white, 26px 24px white, 27px 24px #000000, 28px 24px #000000, 29px 24px white, 30px 24px white, 31px 24px #000000, 13px 25px #000000, 14px 25px #000000, 16px 25px #000000, 17px 25px white, 18px 25px white, 19px 25px white, 20px 25px white, 21px 25px var(--loved), 22px 25px var(--loved), 23px 25px white, 24px 25px white, 25px 25px white, 26px 25px white, 27px 25px #000000, 29px 25px #000000, 30px 25px #000000, 16px 26px #000000, 17px 26px white, 18px 26px white, 19px 26px white, 20px 26px white, 21px 26px white, 22px 26px white, 23px 26px white, 24px 26px white, 25px 26px white, 26px 26px white, 27px 26px #000000, 17px 27px #000000, 18px 27px white, 19px 27px white, 20px 27px white, 21px 27px white, 22px 27px white, 23px 27px white, 24px 27px white, 25px 27px white, 26px 27px #000000, 17px 28px #000000, 18px 28px white, 19px 28px white, 20px 28px white, 21px 28px #000000, 22px 28px #000000, 23px 28px white, 24px 28px white, 25px 28px white, 26px 28px #000000, 17px 29px #000000, 18px 29px white, 19px 29px white, 20px 29px #000000, 23px 29px #000000, 24px 29px white, 25px 29px white, 26px 29px #000000, 17px 30px #000000, 18px 30px white, 19px 30px white, 20px 30px #000000, 23px 30px #000000, 24px 30px white, 25px 30px white, 26px 30px #000000, 17px 31px #000000, 18px 31px white, 19px 31px white, 20px 31px #000000, 23px 31px #000000, 24px 31px white, 25px 31px white, 26px 31px #000000, 18px 32px #000000, 19px 32px #000000, 24px 32px #000000, 25px 32px #000000;
+  transform:scale(3.8) translate(-800%, -700%);
+}
+
+
+
+.little-guy-speech {
+  position:absolute;
+  z-index:9;
+  top: 0;
+  left: 0;
+}
+.speech {
+  background: white;
+  color:black;
+  padding:4px;
+  width: 50%;
+  transform: translate(80px, -40px);
+  position: relative;
+  font-size:20px;
+  font-family: 'VT323', monospace;
+}
+.speech span.top, .speech span.bottom {
+  position:absolute;
+  display:block;
+  height:calc(100% - 8px);
+  top:4px;
+  left:-4px;
+  width:4px;
+  background: white;
+}
+
+.speech span.bottom, .speech span.bottom:before {
+  left: auto;
+  right:-4px;
+}
+
+.speech span.top:after {
+  content:'';
+  position:absolute;
+  bottom:0;
+  width:4px;
+  height:4px;
+  box-shadow: 24px 8px white, 20px 8px white, 16px 16px white, 20px 12px white;
+}
+
+
+.little-guy {
+width:100px;
+position:relative;
+height:100px;
+  animation: float 4s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0,0,0) scale3d(1.2, 1.18, 1);
+  }
+  50% {
+    transform: translate3d(0, 1rem, 0) scale3d(1.22, 1.2, 1.2);
+  }
+  100% {
+    transform: translate3d(0,0,0) scale3d(1.2, 1.2, 1);
+  }
+}
+
+  .little-guy.sad-true{
+    --cry: skyblue;
+    --lovedOrCry: skyblue;
+  }
+  .little-guy.fed-true, .little-guy:hover{
+      --loved: #ff8080;
+      --lovedOrCry: #ff8080;
+  }
+
+.little-guy {
+  transform:translate(8px, 0);
+  z-index:1;
+  --loved: white;
+  --cry: white;
+  --lovedOrCry: white;
+}
 
 article .emoji span{
   transform: rotate(-20deg)
@@ -651,7 +742,14 @@ div:hover:has(.video-button) .video-button {
   opacity: 1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 870px) {
+  .other-content {
+   display: none;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
   #featured-work article {
     width: 90%;
   }
