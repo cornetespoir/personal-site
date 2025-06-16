@@ -41,7 +41,7 @@ export default function Home() {
             <section className={sectionClasses}>
                 <article>
                     <h2>Animation and interaction highlights</h2>
-                    <p>From a "turning" disk to pulsing touch animations, I wanted to make the playlist fun to interact with and look at outside of just playing audio.</p>
+                    <p>From a rotating disk to pulsing touch animations, I wanted to make the playlist fun to interact with and look at outside of just playing audio.</p>
                 </article>
                     <Video src='/maestro-animations.mp4' className={styles.videoContainer} />
             </section>

@@ -33,7 +33,7 @@ export default function Home() {
             </header>
             <article className={styles.about}>
                 <h2>About Findtags</h2>
-                <p>After seeing a bunch of complaints about the updated tag search system, I used tumblr's API to recreate the older tag search while integrating some quality of life updates. </p>
+                <p>After seeing a bunch of complaints about the updated tag search system, I used tumblr&apos;s API to recreate the older tag search while integrating some quality of life updates. </p>
                 <p>Findtags was originally created in 2020 and rewritten in 2022 with React.</p>
             </article>
 
@@ -53,7 +53,7 @@ export default function Home() {
                 <Video src='/findtags-filters.mp4' className={styles.videoContainer} />
                 <article>
                     <h2>User filters</h2>
-                    <p>Users can add key words that they don't want to appear in their search results. The option to view the post can also be disabled</p>
+                    <p>Users can add key words that they don&apos;t want to appear in their search results. The option to view the post can also be disabled</p>
                 </article>
             </section>
 
