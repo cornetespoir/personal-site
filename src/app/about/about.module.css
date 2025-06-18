@@ -1,6 +1,7 @@
 .about {
    article {
-    width: 700px;
+    width: 98%;
+    max-width: 700px;
     margin: auto;
    }
    h1 {
@@ -8,7 +9,7 @@
    }
   article p {
     margin-bottom: var(--spacing);
-    box-shadow: 0 0 0px 10px rgba(0,0,0, .08);
+    box-shadow: 0 0 10px rgba(0,0,0, .08);
     line-height: 200%;
     padding: calc(var(--spacing) * 4);
     background: var(--containers);
