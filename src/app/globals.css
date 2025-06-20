@@ -215,7 +215,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, footer button:hover {
   text-decoration: underline;
 }
 
