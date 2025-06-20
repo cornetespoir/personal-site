@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from '../project.module.css'
 import clsx from "clsx";
 import { Metadata } from "next";

@@ -1,5 +1,5 @@
 'use client'
-import { ReactNode, useContext, useEffect, useState } from "react"
+import { ReactNode, useContext, useState } from "react"
 import { PageContext, TransitionType } from "@/types"
 import clsx from "clsx"
 
