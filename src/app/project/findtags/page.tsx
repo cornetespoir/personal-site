@@ -3,6 +3,7 @@ import styles from '../project.module.css'
 import clsx from "clsx";
 import { Metadata } from "next";
 import { Video } from "@/components/Video";
+import { FooterNav } from "@/components/FooterNav";
 
 export const metadata: Metadata = {
     title: 'Project: Maestro',
@@ -56,14 +57,12 @@ export default function Home() {
                     <p>Users can add key words that they don&apos;t want to appear in their search results. The option to view the post can also be disabled</p>
                 </article>
             </section>
-
-            <footer className={footerClasses}>
-                <nav className='flex align-center space-between'>
-                    <Link href='/'>Back</Link>
-                    <Link href='https://github.com/cornetespoir/findtags' target='_blank'>View on GitHub</Link>
-                    <Link className={styles.site} href='https://findtags.egg.design/' target='_blank'>Visit Site</Link>
-                </nav>
-            </footer>
+            <FooterNav
+                footerClasses={footerClasses}
+                siteStyles={styles.site}
+                githubURL="https://github.com/cornetespoir/findtags"
+                siteURL="https://findtags.egg.design"
+            />
         </main>
     )
 }

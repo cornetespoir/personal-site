@@ -1,14 +1,16 @@
 import { FeaturedProject } from '@/components/FeaturedProject'
 import { projects } from './projects'
-import { useRef, WheelEvent } from 'react'
+import { useEffect, useRef, WheelEvent } from 'react'
 import clsx from 'clsx'
 import styles from './page.module.css'
 import Link from 'next/link'
+import { usePageContext } from './PageContext'
+import { TransitionType } from '@/types'
 
 export function PageContents() {
 
     const featuredWorkRef = useRef<HTMLDivElement | null>(null)
-
+    const { setTransition} = usePageContext()
     function horizontalScrolling(e: WheelEvent<HTMLDivElement>) {
         if (featuredWorkRef.current == null) return
         e.preventDefault()
@@ -22,16 +24,20 @@ export function PageContents() {
         'flex space-around',
         styles.nav
     )
+    useEffect(() => {
+        setTransition(null)
+        setTransition(TransitionType.enter)
+    }, [])
     return (
         <>
             <header className={headerClasses}>
-                <Link href='/project/css' id='daynight-toggle'
+                <Link href='/project/css' target='_blank' id='daynight-toggle'
                     className='flex centered justify-center'>
                     🎨<span className='sr-text'>Open the CSS Art Gallery</span>
                 </Link>
                 <nav className={navClasses}>
                     <Link href='/'>Home</Link>
-                    <Link href='/about'>About</Link>
+                    <Link href='/about' target='_blank'>About</Link>
                     <Link href='https://egg.design/tagged/blog' target='_blank'>Blog</Link>
                 </nav>
                 <div className='flex full space-between align-center'>

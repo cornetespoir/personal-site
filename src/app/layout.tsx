@@ -3,6 +3,7 @@ import './globals.css';
 
 import { Open_Sans, VT323 } from 'next/font/google';
 import clsx from 'clsx';
+import { PageContextProvider } from './PageContext';
 
 const pixel = VT323({
   weight: '400',
@@ -31,7 +32,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={bodyClasses}>
+        <PageContextProvider>
         {children}
+        </PageContextProvider>
       </body>
     </html>
   )
