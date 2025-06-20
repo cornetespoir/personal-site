@@ -17,10 +17,15 @@
     min-width: 480px;
     border:1px solid rgba(var(--white), .2);
     border-radius: 3rem;
-    & a {
+    & a, button {
         border-radius: 3rem;
         margin: var(--spacing);
         padding: .6rem var(--spacing);
+    }
+    & button {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
     }
 }
 

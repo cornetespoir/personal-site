@@ -43,6 +43,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  cursor: pointer;
+}
+
 
 .confetti {
   margin: 0 4px;
@@ -201,7 +205,7 @@ body {
 h1,
 h2,
 h3,
-.buttons a {
+.buttons a, .buttons button, .buttons span {
   font-weight: normal;
   font-family: "VT323", monospace;
 }
@@ -211,7 +215,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, footer button:hover {
   text-decoration: underline;
 }
 
@@ -605,7 +609,8 @@ article:hover .buttons {
   opacity: 1;
 }
 
-.buttons a {
+.buttons {
+  cursor: pointer;
   font-size: 2rem;
 }
 
@@ -812,6 +817,38 @@ div:hover:has(.video-button) .video-button {
     }
   }
 }
+
+.transition:before, .transition:after {
+  content:'';
+  z-index:99;
+  transition: 1s ease-in-out;
+  width: 50vw;
+  top:0;
+  background: var(--background);
+  height: 100vh;
+  position: fixed;
+  display: block;
+}
+
+.transition:after {
+  right: 0;
+  top:0;
+}
+
+.transition-enter:before {
+    transition-delay: .4s;
+    transform: translatex(-50vw);
+}
+
+.transition-enter:after {
+  transition-delay: .4s;
+   transform: translatex(50vw);
+}
+
+.transition-exit:before, .transition-exit:after {
+      transform:translatex(0)
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

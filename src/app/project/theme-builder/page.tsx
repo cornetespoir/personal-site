@@ -1,8 +1,8 @@
-import Link from "next/link";
 import styles from '../project.module.css'
 import clsx from "clsx";
 import { Metadata } from "next";
 import { Video } from "@/components/Video";
+import { FooterNav } from "@/components/FooterNav";
 
 export const metadata: Metadata = {
     title: 'Project: Theme builder',
@@ -56,13 +56,9 @@ export default function Home() {
                     <p>You can set your theme to use 400, 540, and 700px wide posts (as per Tumblr&apos;s media blocks), change the location of the post information, enable like and reblog buttons, and change the style of pinned posts.</p>
                 </article>
             </section>
-            <footer className={footerClasses}>
-                <nav className='flex align-center space-between'>
-                    <Link href='/'>Back</Link>
-                    <Link href='https://github.com/cornetespoir/audio-playlist?tab=readme-ov-file#maestro' target='_blank'>View on GitHub</Link>
-                    <Link className={styles.site} href='https://maestro.bridgette.dev/' target='_blank'>Visit Site</Link>
-                </nav>
-            </footer>
+            <FooterNav footerClasses={footerClasses}
+                githubURL='https://github.com/cornetespoir/audio-playlist?tab=readme-ov-file#maestro'
+                siteStyles={styles.site} siteURL='https://maestro.bridgette.dev/' />
         </main>
     )
 }

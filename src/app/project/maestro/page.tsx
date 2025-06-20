@@ -3,6 +3,7 @@ import styles from '../project.module.css'
 import clsx from "clsx";
 import { Metadata } from "next";
 import { Video } from "@/components/Video";
+import { FooterNav } from "@/components/FooterNav";
 
 export const metadata: Metadata = {
   title: 'Project: Maestro',
@@ -59,13 +60,11 @@ export default function Home() {
                     </ul>
                 </article>
             </section>
-            <footer className={footerClasses}>
-                <nav className='flex align-center space-between'>
-                    <Link href='/'>Back</Link>
-                    <Link href='https://github.com/cornetespoir/audio-playlist?tab=readme-ov-file#maestro' target='_blank'>View on GitHub</Link>
-                    <Link className={styles.site} href='https://maestro.bridgette.dev/' target='_blank'>Visit Site</Link>
-                </nav>
-            </footer>
+            <FooterNav
+                footerClasses={footerClasses}
+                githubURL='https://github.com/cornetespoir/audio-playlist?tab=readme-ov-file#maestro'
+                siteStyles={styles.site} 
+                siteURL='https://maestro.bridgette.dev/' />
         </main>
     )
 }
