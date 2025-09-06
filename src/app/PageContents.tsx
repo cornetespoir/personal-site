@@ -10,7 +10,7 @@ export function PageContents() {
             <nav className="flex space-around">
                 <Link href="/">Home</Link>
                 <Link target="_blank" href="/about">About</Link>
-                <Link target="_blank" href="https://egg.design/tagged/blog">Blog</Link>
+                <Link href="#projects">Projects</Link>
             </nav>
             <header className='full-width flex align-center justify-center'>
                 <div className='half-width'>
@@ -85,9 +85,17 @@ export function PageContents() {
                         </div>
                     </article>
                 </section>
-                <section>
+                <section id='projects'>
                     <h2><span>Misc. Projects</span></h2>
                     <Projects projects={projects} />
+                </section>
+                <section>
+                    <h2>Connect with me</h2>
+                    <div className='socials'>
+                        <Link href="https://github.com/cornetespoir" target='_blank' className='social'>github</Link>
+                        <Link href="https://egg.design" target="_blank" className='social'>blog</Link>
+                        <Link href="https://codepen.io/cornetespoir" target="_blank" className='social'>codepen</Link>
+                    </div>
                 </section>
             </main>
         </>

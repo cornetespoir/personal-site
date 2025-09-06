@@ -147,6 +147,7 @@
 html,
 body {
   max-width: 100vw;
+    scroll-behavior: smooth;
 }
 
 
@@ -154,7 +155,7 @@ body {
   background-color: var(--background) !important;
   --background-color: 0, 0, 0;
   background-image:
-    linear-gradient(to top, var(--background), rgba(var(--background-color), .2), var(--background)),
+    linear-gradient(to top, transparent, var(--background), var(--background), rgba(var(--background-color), .2), var(--background)),
     radial-gradient(at 11% 16%, hsla(231, 83%, 58%, 0.142) 0px, transparent 50%),
     url('https://64.media.tumblr.com/b0cd867eddc59c64188f9b2b7a9e29b4/5d2c15c12b39b961-29/s2048x3072/360c1e057450d39646c584ed992c0d083846f05a.png') !important;
   color: var(--foreground);
@@ -304,7 +305,6 @@ body {
   font-family: "Open Sans", sans-serif;
   background: var(--background);
   color: var(--text);
-  scroll-behavior: smooth;
 }
 
 h1,
@@ -654,12 +654,27 @@ section h2 span {
   grid-area: one;
 }
 
-.skills article:nth-of-type(2) {
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  margin: var(--spacing) auto;
+}
+.social {
+  padding: 8px var(--spacing);
+  font-size: 1.2rem;
+  border-radius: 2rem;
+}
+
+.skills article:nth-of-type(2), .social {
   grid-area: two;
   background: rgb(121, 51, 128);
 }
 
-.skills article:nth-of-type(3) {
+.skills article:nth-of-type(3), .social:nth-of-type(2){
   grid-area: three;
 
   background: rgb(69, 104, 179);
@@ -670,7 +685,7 @@ section h2 span {
   background: rgb(151, 48, 106);
 }
 
-.skills article:nth-of-type(5) {
+.skills article:nth-of-type(5),  .social:nth-of-type(3) {
   grid-area: five;
   background: rgb(23, 93, 109);
 }
