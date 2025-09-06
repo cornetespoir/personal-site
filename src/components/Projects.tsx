@@ -1,6 +1,6 @@
 import { Direction, Project } from '@/types'
 import { FeaturedProject } from './FeaturedProject'
-import { ReactElement, useEffect, useState } from 'react'
+import { ReactElement, useState } from 'react'
 import clsx from 'clsx'
 
 interface ProjectProps {

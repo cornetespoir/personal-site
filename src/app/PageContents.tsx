@@ -15,7 +15,7 @@ export function PageContents() {
             <header className='full-width flex align-center justify-center'>
                 <div className='half-width'>
                     <div className='folder'>
-                        <h1> I'm <span className="confetti"><i></i><i></i><i></i><i></i><i></i><i></i>Bridgette</span>, a front-end developer</h1>
+                        <h1> I&apos;m <span className="confetti"><i></i><i></i><i></i><i></i><i></i><i></i>Bridgette</span>, a front-end developer</h1>
                         <p>I develop responsive, accessible UI and love pushing the boundaries of CSS. </p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export function PageContents() {
                         <div className='content'>
                             <h2 className='funky-underline'>Specializations</h2>
                         <div className='p'>
-                            <p>I'm all about adding <span className='confetti'><i></i><i></i><i></i><i></i><i></i><i></i>whimsy</span> to web development. I like using fun shapes, animations, and interactive elements, all while keeping things as accessible as possible! While I use Bootstrap in my professional work, I like writing my CSS from scratch to explore what's possible with unique layouts and interactions.</p>
+                            <p>I&apos;m all about adding <span className='confetti'><i></i><i></i><i></i><i></i><i></i><i></i>whimsy</span> to web development. I like using fun shapes, animations, and interactive elements, all while keeping things as accessible as possible! While I use Bootstrap in my professional work, I like writing my CSS from scratch to explore what&apos;s possible with unique layouts and interactions.</p>
                         </div>
                         </div>
                     </article>

@@ -1,6 +1,5 @@
 'use client'
-import { usePageContext } from "@/app/PageContext";
-import { Project, TransitionType } from "@/types";
+import { Project } from "@/types";
 import clsx from "clsx";
 import Link from "next/link";
 import { ReactElement } from "react";
