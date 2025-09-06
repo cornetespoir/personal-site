@@ -2,6 +2,41 @@
     font-size: 6rem;
 }
 
+.header {
+    padding:0;
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.skill span {
+    font-family: 'Open Sans';
+    padding: 8px 12px; 
+    font-size: 1rem;
+    border-radius: 2rem;
+    background: var(--folder);
+}
+
+.skill span:hover{
+    border: 0;
+}
+
+.skill span:nth-of-type(2) {
+      background: rgb(69, 104, 179);
+}
+
+.skill span:nth-of-type(3) {
+  background: rgb(23, 93, 109);
+}
+
+.skill span:nth-of-type(4) {
+  background: rgb(151, 48, 106);
+}
 .footer {
     position: fixed;
     bottom: var(--spacing);
@@ -87,6 +122,7 @@
 .video {
     position: absolute;
     height: 50vh;
+    margin: auto;
     border-radius: var(--spacing);
     width: 100%;
     z-index:-1;

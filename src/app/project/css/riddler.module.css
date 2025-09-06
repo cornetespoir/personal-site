@@ -124,10 +124,6 @@
                 border-bottom-right-radius:48%
             }
             
-            .chin {
-         
-            }
-            
             .chin:before, .chin:after{
                 content:'';
                 position:absolute;

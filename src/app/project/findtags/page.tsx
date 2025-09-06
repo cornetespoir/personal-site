@@ -30,6 +30,12 @@ export default function Home() {
             <header className={headerClasses}>
                 <h1>Findtags</h1>
                 <p>A tumblr search alternative.</p>
+                <p className={styles.skill}>
+                    <span>React</span> 
+                    <span>Next.JS</span>
+                    <span>Tumblr API</span> 
+                    <span>CSS</span>
+                </p>
             </header>
             <article className={styles.about}>
                 <h2>About Findtags</h2>

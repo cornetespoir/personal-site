@@ -1,44 +1,55 @@
 'use client'
-import { usePageContext } from "@/app/PageContext";
-import { Project, TransitionType } from "@/types";
+import { Project } from "@/types";
+import clsx from "clsx";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { ReactElement } from "react";
 
 interface FeaturedProjectProps {
     project: Project
+    position?: string
 }
 
 export function FeaturedProject({
-    project
+    project,
+    position
 }: FeaturedProjectProps): ReactElement | null {
-    const {setTransition} = usePageContext()
-    const {title, altText, image, url, description, emoji} = project
+    if (project == null) {
+        return null
+    }
+    const { title, altText, image, url, description } = project
     const isExternalLink = url?.includes('https://')
-    const router = useRouter()
     if (url?.trim() === '' || url == null) {
         return null
     }
+    const projectClassNames = clsx(
+        'project',
+        position && `project-${position}`
+    )
 
-    function pageTransition() {
-        setTransition(TransitionType.exit)
-        setTimeout(() => {
-            router.push(url ?? '/')
-        }, 1000)
-    }
+    const featured = project.title === 'Maestro'
+
     return (
-        <article>
-            <div className='emoji'><span>{emoji}</span></div>
+        <article className={projectClassNames}>
+            {featured && <div className="sparkle"><span></span></div>}
             <div className='preview'>
                 <img alt={altText} src={image} />
             </div>
             <div className='text'>
-              <h3>{title}</h3>
-              <p>{description}</p>
+               <div className='title flex space-between align-center'>
+                 <h3>{title}</h3>
+                 <span className='pill'>View Project</span>
+               </div>
+                <p>{description}</p>
+                              {featured && <div className="sparkle"><span></span></div>}
+
             </div>
-            <div className='buttons flex centered justify-center' onClick={pageTransition}>
-                {isExternalLink ? (<Link href={url} target={isExternalLink ? '_blank' : ''}>Learn more</Link>) : <span>Learn More</span>}
-            </div>
+            <Link
+                className='flex centered justify-center stretched'
+                href={url}
+                target={isExternalLink ? '_blank' : ''
+                }>
+                    <span className='sr-text'>Go to the project</span>
+            </Link>
         </article>
     )
 }

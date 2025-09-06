@@ -12,14 +12,133 @@
   --pastel-blue: #b4bde3;
   --pastel-pink: #fde3e6;
   --salmon: #fd8395ff;
+  --folder: #49509d;
   --black: #000;
   --brown: #5c2636ff;
   --macaroni: #f7bb84ff;
 }
 
+.me {
+  height: 10px;
+  width: 10px;
+  transform: scale(.8) translate(-100px, -30px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  overflow: visible !important;
+  box-shadow:
+    180px 60px 0 0 var(--black), 190px 60px 0 0 var(--black), 200px 60px 0 0 var(--black), 210px 60px 0 0 var(--black), 220px 60px 0 0 var(--black), 230px 60px 0 0 var(--black), 240px 60px 0 0 var(--black), 250px 60px 0 0 var(--black),
+    160px 70px 0 0 var(--black), 170px 70px 0 0 var(--black), 180px 70px 0 0 var(--hair), 190px 70px 0 0 var(--hair), 200px 70px 0 0 var(--hair), 210px 70px 0 0 var(--hair), 220px 70px 0 0 var(--hair), 230px 70px 0 0 var(--hair), 240px 70px 0 0 var(--hair), 250px 70px 0 0 var(--hair), 260px 70px 0 0 var(--black), 150px 80px 0 0 var(--black), 160px 80px 0 0 var(--hair), 170px 80px 0 0 var(--hair), 180px 80px 0 0 var(--hair), 190px 80px 0 0 var(--hair), 200px 80px 0 0 var(--hair), 210px 80px 0 0 var(--hair), 220px 80px 0 0 var(--hair), 230px 80px 0 0 var(--hair), 240px 80px 0 0 var(--hair), 250px 80px 0 0 var(--hair), 260px 80px 0 0 var(--hair), 270px 80px 0 0 var(--black), 280px 80px 0 0 var(--black),
+    140px 90px 0 0 var(--black), 150px 90px 0 0 var(--hair), 160px 90px 0 0 var(--hair), 170px 90px 0 0 var(--hair),
+    180px 90px 0 0 var(--hair), 190px 90px 0 0 var(--hair),
+    200px 90px 0 0 var(--hair), 210px 90px 0 0 var(--hair),
+    220px 90px 0 0 var(--hair), 230px 90px 0 0 var(--hair),
+    240px 90px 0 0 var(--hair), 250px 90px 0 0 var(--hair),
+    260px 90px 0 0 var(--hair), 270px 90px 0 0 var(--hair),
+    280px 90px 0 0 var(--black), 290px 90px 0 0 var(--black),
+    130px 100px 0 0 var(--black), 140px 100px 0 0 var(--hair),
+    150px 100px 0 0 var(--hair), 160px 100px 0 0 var(--hair),
+    170px 100px 0 0 var(--hair), 180px 100px 0 0 var(--hair),
+    190px 100px 0 0 var(--hair), 200px 100px 0 0 var(--hair),
+    210px 100px 0 0 var(--hair), 220px 100px 0 0 var(--hair), 230px 100px 0 0 var(--hair),
+    240px 100px 0 0 var(--hair), 250px 100px 0 0 var(--hair), 260px 100px 0 0 var(--hair),
+    270px 100px 0 0 var(--hair), 280px 100px 0 0 var(--hair), 290px 100px 0 0 var(--black), 130px 110px 0 0 var(--black),
+    140px 110px 0 0 var(--hair-highlight), 150px 110px 0 0 var(--hair), 160px 110px 0 0 var(--hair),
+    170px 110px 0 0 var(--hair-shadow), 180px 110px 0 0 var(--hair), 190px 110px 0 0 var(--hair),
+    200px 110px 0 0 var(--hair), 210px 110px 0 0 var(--hair), 220px 110px 0 0 var(--hair),
+    230px 110px 0 0 var(--hair), 240px 110px 0 0 var(--hair), 250px 110px 0 0 var(--hair),
+    260px 110px 0 0 var(--hair), 270px 110px 0 0 var(--hair), 280px 110px 0 0 var(--hair-highlight),
+    290px 110px 0 0 var(--black), 300px 110px 0 0 var(--black), 120px 120px 0 0 var(--black),
+    130px 120px 0 0 var(--hair), 140px 120px 0 0 var(--hair), 150px 120px 0 0 var(--hair-highlight),
+    160px 120px 0 0 var(--hair-shadow), 170px 120px 0 0 var(--hair), 180px 120px 0 0 var(--hair-highlight),
+    190px 120px 0 0 var(--hair-highlight), 200px 120px 0 0 var(--hair-highlight), 210px 120px 0 0 var(--hair), 220px 120px 0 0 var(--hair-shadow), 230px 120px 0 0 var(--hair),
+    240px 120px 0 0 var(--hair-highlight), 250px 120px 0 0 var(--hair-shadow), 260px 120px 0 0 var(--hair),
+    270px 120px 0 0 var(--hair-highlight), 280px 120px 0 0 var(--hair), 290px 120px 0 0 var(--hair), 300px 120px 0 0 var(--black), 120px 130px 0 0 var(--black), 130px 130px 0 0 var(--hair), 140px 130px 0 0 var(--hair), 150px 130px 0 0 var(--hair-shadow), 160px 130px 0 0 var(--hair-shadow), 170px 130px 0 0 var(--hair), 180px 130px 0 0 var(--hair), 190px 130px 0 0 var(--hair), 200px 130px 0 0 var(--hair),
+    210px 130px 0 0 var(--hair), 220px 130px 0 0 var(--hair-shadow), 230px 130px 0 0 var(--hair),
+    240px 130px 0 0 var(--hair), 250px 130px 0 0 var(--hair), 260px 130px 0 0 var(--hair-shadow),
+    270px 130px 0 0 var(--hair), 280px 130px 0 0 var(--hair), 290px 130px 0 0 var(--hair), 300px 130px 0 0 var(--hair), 310px 130px 0 0 var(--black), 110px 140px 0 0 var(--black), 120px 140px 0 0 var(--hair), 130px 140px 0 0 var(--hair), 140px 140px 0 0 var(--hair-shadow), 150px 140px 0 0 var(--hair-shadow), 160px 140px 0 0 var(--skin),
+    170px 140px 0 0 var(--hair-shadow), 180px 140px 0 0 var(--hair),
+    190px 140px 0 0 var(--hair), 200px 140px 0 0 var(--hair),
+    210px 140px 0 0 var(--hair-shadow), 220px 140px 0 0 var(--skin),
+    230px 140px 0 0 var(--hair-shadow), 240px 140px 0 0 var(--hair),
+    250px 140px 0 0 var(--hair), 260px 140px 0 0 var(--hair-shadow), 270px 140px 0 0 var(--hair), 280px 140px 0 0 var(--hair), 290px 140px 0 0 var(--hair), 300px 140px 0 0 var(--hair), 310px 140px 0 0 var(--black), 110px 150px 0 0 var(--black), 120px 150px 0 0 var(--hair), 130px 150px 0 0 var(--hair), 140px 150px 0 0 var(--hair-shadow),
+    150px 150px 0 0 var(--skin), 160px 150px 0 0 var(--skin),
+    170px 150px 0 0 var(--hair-shadow), 180px 150px 0 0 var(--hair), 190px 150px 0 0 var(--hair-shadow), 200px 150px 0 0 var(--hair-shadow), 210px 150px 0 0 var(--skin), 220px 150px 0 0 var(--skin), 230px 150px 0 0 var(--hair-shadow), 240px 150px 0 0 var(--hair), 250px 150px 0 0 var(--hair), 260px 150px 0 0 var(--hair), 270px 150px 0 0 var(--hair-shadow), 280px 150px 0 0 var(--hair), 290px 150px 0 0 var(--hair), 300px 150px 0 0 var(--hair), 310px 150px 0 0 var(--hair), 320px 150px 0 0 var(--black), 110px 160px 0 0 var(--black), 120px 160px 0 0 var(--hair),
+    130px 160px 0 0 var(--hair-shadow), 140px 160px 0 0 var(--hair-shadow),
+    150px 160px 0 0 var(--brow), 160px 160px 0 0 var(--brow), 170px 160px 0 0 var(--skin), 180px 160px 0 0 var(--hair-shadow), 190px 160px 0 0 var(--skin), 200px 160px 0 0 var(--skin), 210px 160px 0 0 var(--brow), 220px 160px 0 0 var(--brow), 230px 160px 0 0 var(--brow), 240px 160px 0 0 var(--hair-shadow), 250px 160px 0 0 var(--hair), 260px 160px 0 0 var(--hair), 270px 160px 0 0 var(--hair-shadow), 280px 160px 0 0 var(--black), 290px 160px 0 0 var(--hair), 300px 160px 0 0 var(--hair), 310px 160px 0 0 var(--hair), 320px 160px 0 0 var(--black), 110px 170px 0 0 var(--black),
+    120px 170px 0 0 var(--hair), 130px 170px 0 0 var(--hair-shadow),
+    140px 170px 0 0 var(--skin), 150px 170px 0 0 var(--white), 160px 170px 0 0 var(--dark-eye), 170px 170px 0 0 var(--skin), 180px 170px 0 0 var(--skin), 190px 170px 0 0 var(--skin), 200px 170px 0 0 var(--skin), 210px 170px 0 0 var(--white), 220px 170px 0 0 var(--dark-eye), 230px 170px 0 0 var(--skin), 240px 170px 0 0 var(--skin), 250px 170px 0 0 var(--hair-shadow), 260px 170px 0 0 var(--hair), 270px 170px 0 0 var(--hair-shadow), 280px 170px 0 0 var(--skin), 290px 170px 0 0 var(--black), 300px 170px 0 0 var(--hair), 310px 170px 0 0 var(--hair), 320px 170px 0 0 var(--black), 110px 180px 0 0 var(--black), 120px 180px 0 0 var(--hair), 130px 180px 0 0 var(--glasses), 140px 180px 0 0 var(--skin), 150px 180px 0 0 var(--eye-highlight), 160px 180px 0 0 var(--eye-highlight), 170px 180px 0 0 var(--skin), 180px 180px 0 0 var(--glasses), 190px 180px 0 0 var(--glasses), 200px 180px 0 0 var(--skin), 210px 180px 0 0 var(--eye-highlight), 220px 180px 0 0 var(--eye-highlight),
+    230px 180px 0 0 var(--skin), 240px 180px 0 0 var(--glasses), 250px 180px 0 0 var(--glasses), 260px 180px 0 0 var(--hair-shadow), 270px 180px 0 0 var(--hair-shadow), 280px 180px 0 0 var(--skin-shadow), 290px 180px 0 0 var(--skin), 300px 180px 0 0 var(--black), 310px 180px 0 0 var(--hair), 320px 180px 0 0 var(--black),
+    110px 190px 0 0 var(--black), 120px 190px 0 0 var(--hair), 130px 190px 0 0 var(--glasses), 140px 190px 0 0 var(--skin), 150px 190px 0 0 var(--lower-eye), 160px 190px 0 0 var(--lower-eye), 170px 190px 0 0 var(--glasses), 180px 190px 0 0 var(--skin),
+    190px 190px 0 0 var(--skin), 200px 190px 0 0 var(--glasses), 210px 190px 0 0 var(--lower-eye), 220px 190px 0 0 var(--lower-eye), 230px 190px 0 0 var(--skin), 240px 190px 0 0 var(--glasses), 250px 190px 0 0 var(--skin), 260px 190px 0 0 var(--skin-shadow), 270px 190px 0 0 var(--hair-shadow), 280px 190px 0 0 rgb(246, 206, 198), 290px 190px 0 0 var(--skin), 300px 190px 0 0 var(--black), 310px 190px 0 0 var(--hair), 320px 190px 0 0 var(--black), 110px 200px 0 0 var(--black), 120px 200px 0 0 var(--hair), 130px 200px 0 0 var(--black), 140px 200px 0 0 var(--glasses), 150px 200px 0 0 var(--glasses), 160px 200px 0 0 var(--glasses), 170px 200px 0 0 var(--skin), 180px 200px 0 0 var(--skin), 190px 200px 0 0 var(--skin), 200px 200px 0 0 var(--skin), 210px 200px 0 0 var(--glasses), 220px 200px 0 0 var(--glasses), 230px 200px 0 0 var(--glasses), 240px 200px 0 0 var(--skin), 250px 200px 0 0 var(--skin), 260px 200px 0 0 var(--skin-shadow),
+    270px 200px 0 0 var(--skin), 280px 200px 0 0 var(--skin), 290px 200px 0 0 var(--black), 300px 200px 0 0 var(--hair),
+    310px 200px 0 0 var(--black), 320px 200px 0 0 var(--black), 110px 210px 0 0 var(--black), 120px 210px 0 0 var(--hair),
+    130px 210px 0 0 var(--black), 140px 210px 0 0 var(--skin), 150px 210px 0 0 var(--skin), 160px 210px 0 0 var(--skin),
+    170px 210px 0 0 var(--skin), 180px 210px 0 0 var(--skin), 190px 210px 0 0 var(--skin), 200px 210px 0 0 var(--skin),
+    210px 210px 0 0 var(--skin), 220px 210px 0 0 var(--skin), 230px 210px 0 0 var(--skin), 240px 210px 0 0 var(--skin), 250px 210px 0 0 var(--skin), 260px 210px 0 0 var(--skin-shadow),
+    270px 210px 0 0 var(--black), 280px 210px 0 0 var(--black), 290px 210px 0 0 var(--hair), 300px 210px 0 0 var(--hair),
+    310px 210px 0 0 var(--black), 110px 220px 0 0 var(--black), 120px 220px 0 0 var(--hair), 130px 220px 0 0 var(--hair),
+    140px 220px 0 0 var(--black), 150px 220px 0 0 var(--skin), 160px 220px 0 0 var(--skin), 170px 220px 0 0 var(--skin),
+    180px 220px 0 0 var(--mouth-2), 190px 220px 0 0 var(--mouth-2), 200px 220px 0 0 var(--skin),
+    210px 220px 0 0 var(--mouth), 220px 220px 0 0 var(--skin), 230px 220px 0 0 var(--skin), 240px 220px 0 0 var(--skin), 250px 220px 0 0 var(--skin-shadow),
+    260px 220px 0 0 var(--black), 270px 220px 0 0 var(--hair), 280px 220px 0 0 var(--hair), 290px 220px 0 0 var(--hair),
+    300px 220px 0 0 var(--hair), 310px 220px 0 0 var(--black), 120px 230px 0 0 var(--black), 130px 230px 0 0 var(--hair),
+    140px 230px 0 0 var(--hair), 150px 230px 0 0 var(--black), 160px 230px 0 0 var(--skin), 170px 230px 0 0 var(--skin),
+    180px 230px 0 0 var(--mouth), 190px 230px 0 0 var(--mouth), 200px 230px 0 0 var(--mouth), 210px 230px 0 0 var(--skin),
+    220px 230px 0 0 var(--skin), 230px 230px 0 0 var(--skin-shadow), 240px 230px 0 0 var(--skin-shadow),
+    250px 230px 0 0 var(--black), 260px 230px 0 0 var(--hair), 270px 230px 0 0 var(--hair), 280px 230px 0 0 var(--hair),
+    290px 230px 0 0 var(--hair), 300px 230px 0 0 var(--black), 130px 240px 0 0 var(--black), 140px 240px 0 0 var(--hair),
+    150px 240px 0 0 var(--black), 160px 240px 0 0 var(--black), 170px 240px 0 0 var(--skin), 180px 240px 0 0 var(--skin),
+    190px 240px 0 0 var(--skin), 200px 240px 0 0 var(--skin), 210px 240px 0 0 var(--skin), 220px 240px 0 0 var(--skin), 230px 240px 0 0 var(--black), 240px 240px 0 0 var(--black), 250px 240px 0 0 var(--hair), 260px 240px 0 0 var(--hair), 270px 240px 0 0 var(--black), 280px 240px 0 0 var(--black), 290px 240px 0 0 var(--black), 140px 250px 0 0 var(--black), 250px 250px 0 0 var(--black), 260px 250px 0 0 var(--black);
+}
+
+.pixel-container {
+  width: 210px;
+  height: 200px;
+  position: relative;
+  --black: rgba(0, 0, 0, 1);
+  --hair: rgb(87, 64, 55);
+  --white: rgb(255, 255, 255);
+  --glasses: rgb(62, 58, 94);
+  --skin: rgba(255, 205, 210, 1);
+  --hair-shadow: rgb(45, 31, 19);
+  --dark-eye: rgb(40, 26, 14);
+  --lower-eye: rgb(142, 96, 58);
+  --skin-shadow: #c98f8d;
+  --hair-highlight: rgb(196, 154, 137);
+  --mouth: #be726f;
+  --mouth-2: var(--skin);
+  --brow: rgb(80, 45, 28);
+  --eye-highlight: rgb(173, 115, 64);
+}
+
+.folder {
+  min-height: 100px;
+  min-width: 300px;
+  margin: var(--spacing);
+  z-index: 1;
+  border-radius: 5px 1rem 1rem 1rem;
+  background: var(--folder);
+  position: relative;
+  padding: var(--spacing);
+}
+
+.folder::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -18px;
+  left: 0;
+  width: 200px;
+  height: 30px;
+  background: var(--folder);
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
+}
+
 @media (prefers-color-scheme: dark) {
-  :root{
-    --background: #0f0f2a;
+  :root {
+    --background: #171637;
     --text: #fff;
     --containers: #1c2244;
   }
@@ -28,14 +147,16 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
-svg {
-  fill: var(--text);
-}
 
 body {
+  background-color: var(--background) !important;
+  --background-color: 0, 0, 0;
+  background-image:
+    linear-gradient(to top, var(--background), rgba(var(--background-color), .2), var(--background)),
+    radial-gradient(at 11% 16%, hsla(231, 83%, 58%, 0.142) 0px, transparent 50%),
+    url('https://64.media.tumblr.com/b0cd867eddc59c64188f9b2b7a9e29b4/5d2c15c12b39b961-29/s2048x3072/360c1e057450d39646c584ed992c0d083846f05a.png') !important;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +168,11 @@ button {
   cursor: pointer;
 }
 
+.passions .confetti {
+  border: 0;
+  padding-top: 2px;
+  font-weight: bold;
+}
 
 .confetti {
   margin: 0 4px;
@@ -55,45 +181,50 @@ button {
 }
 
 article .confetti {
-    display: inline-block;
-    line-height: 140%;
+  display: inline-block;
+  line-height: 140%;
 }
 
 .confetti:hover i {
-  animation: bang 1s ease-out forwards;
+  animation: bang 2s ease-out infinite;
 }
 
 .confetti i {
-    position: absolute;
-    display: block;
-    left: 50%;
-    top: 0;
-    width: 3px;
-    opacity: 0;
-    height: 5px;
-    background: red;
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  opacity: 0;
+  height: 5px;
+  background: red;
 }
 
 .confetti:hover i:nth-of-type(1) {
   transform: translate3d(24px, -10px, 0) rotate(79deg);
   background: tomato;
 }
+
 .confetti i:nth-of-type(2) {
   transform: translate3d(37px, -14px, 0) rotate(58deg);
   background: mediumaquamarine;
 }
+
 .confetti i:nth-of-type(3) {
   transform: translate3d(-40px, -14px, 0) rotate(329deg);
   background: peachpuff;
 }
+
 .confetti i:nth-of-type(4) {
   transform: translate3d(-36px, -10px, 0) rotate(345deg);
   background: skyblue;
 }
+
 .confetti i:nth-of-type(5) {
   transform: translate3d(-26px, -10px, 0) rotate(329deg);
   background: slateblue;
 }
+
 .confetti i:nth-of-type(6) {
   transform: translate3d(0px, -18px, 0) rotate(345deg);
   background: goldenrod;
@@ -107,42 +238,11 @@ article .confetti {
 }
 
 
-.fun, .interactions {
+.fun,
+.interactions {
   position: relative;
-  border-bottom: 1px solid var(--text);
-}
-.fun:hover + .interactions {
-  color: tomato;
 }
 
-.fun:hover + .interactions:before, .fun:has(+ .interactions:hover):before {
-  content:'';
-  width: 100%;
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  height: 1px;
-  background:linear-gradient(-45deg,salmon,#6495ed);
-  background-size:400% 400%;
-  animation:gradient 6s ease infinite
-}
-
-@keyframes gradient {
-  0% {
-    background-position:0 50%
-  }
-  50% {
-    background-position:100% 50%
-  }
-  to {
-    background-position:0 50%
-  }
-}
-
-.fun:has(+ .interactions:hover) {
-  color: skyblue;
-}
 
 * {
   box-sizing: border-box;
@@ -160,6 +260,7 @@ a {
   flex-wrap: wrap;
 }
 
+
 .space-around {
   justify-content: space-around;
 }
@@ -176,8 +277,12 @@ a {
   justify-content: space-between;
 }
 
-.full {
+.full-width {
   width: 100%;
+}
+
+.half-width {
+  width: 50%;
 }
 
 .centered {
@@ -205,7 +310,9 @@ body {
 h1,
 h2,
 h3,
-.buttons a, .buttons button, .buttons span {
+.buttons a,
+.buttons button,
+.buttons span {
   font-weight: normal;
   font-family: "VT323", monospace;
 }
@@ -215,7 +322,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, footer button:hover {
+a:hover,
+footer button:hover {
   text-decoration: underline;
 }
 
@@ -241,93 +349,74 @@ img {
   position: absolute;
 }
 
-.other-content {
-  width: 40%;
+header,
+main,
+footer {
+  max-width: calc(100% - 8vh);
+  width: 100%;
+  margin: auto;
 }
-.text-content,
-.other-content {
-  color: rgb(var(--white));
-  margin-top: calc(var(--spacing) * -1);
-  padding: 0 calc(var(--spacing) * 4);
+
+header {
+  border-radius: 1.2rem;
+  height: 50vh;
+  background: radial-gradient(var(--background), rgb(48, 46, 96));
+  gap: var(--spacing);
+  font-family: "VT323", monospace;
+}
+
+header h1 {
+  font-size: 2.4rem;
 }
 
 header p {
-  font-size: 1.2rem;
+
+  font-size: 1.6rem;
 }
 
 header span:hover {
   border-bottom: 2px dashed white;
 }
 
-.links {
-  background: var(--background);
-  border-top-right-radius: 2rem;
+
+nav:before,
+nav:after {
+  content: "";
+  right: 0;
+  display: block;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  top: -1.2px;
 }
 
-.links:before {
-  background-image: radial-gradient(
-    circle at 100% 0%,
-    transparent 0%,
-    transparent 30px,
-    var(--background) 30px
-  );
-  content: "";
+nav:after {
+  background-image: radial-gradient(circle at 100% 0, transparent 0, transparent 30px, #171637d4 30px);
   width: 30px;
-  right: 0;
-  position: absolute;
   height: 30px;
-  top: -30px;
-  left: 0px;
-}
-
-.links:after {
-  background-image: radial-gradient(
-    circle at 100% 0%,
-    transparent 0%,
-    transparent 30px,
-    var(--background) 30px
-  );
-  content: "";
-  width: 30px;
-  right: 0;
-  position: absolute;
-  height: 30px;
-  bottom: 0;
+  transform: scaleY(-1);
   right: -30px;
 }
 
-.links a {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: var(--spacing);
+nav:before {
+  background-image: radial-gradient(circle at 100% 0, transparent 0, transparent 28px, #171637d4 28px);
+  width: 28px;
+  height: 28px;
+  transform: scaleX(-1) scaleY(-1);
+  left: -28px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  gap: calc(var(--spacing) * 2);
+  background: #171637d4 ;
+  height: auto;
+  width: 30vw;
+  backdrop-filter: blur(10px);
+  margin: 4vh auto -50px auto;
   align-items: center;
-  border-right: 1px solid #6042685a;
-  justify-content: space-around;
-}
-
-.links a:last-of-type {
-  border-right: 0;
-}
-
-.links svg {
-  height: 1rem;
-}
-
-.indicator {
-  position: absolute;
-  border: 2px solid rgb(157, 183, 231);
-  z-index: 0;
-  width: 70px;
-  display: block;
-  box-shadow: 2px 2px 1rem rgba(100, 148, 237, 0.208);
-  padding: 1rem;
-  left: 0.8rem;
-  height: 1rem;
-  border-radius: 2rem;
+  border-radius: 0 0 1.4rem 1.4rem;
+  padding: var(--spacing);
 }
 
 h2 {
@@ -342,513 +431,663 @@ main {
 section {
   gap: calc(var(--spacing) * 2);
   position: relative;
-  margin: calc(var(--spacing) * 2);
   padding: calc(var(--spacing) * 2);
+  margin: calc(var(--spacing) * 2);
   padding-left: 0;
 }
 
+
+
+
 .preview {
-  width: 100%;
-  overflow: hidden;
-  border-top-right-radius: 0.6rem;
-  border-top-left-radius: 0.6rem;
-  height: 30vh;
   position: relative;
-}
-
-.text {
-  padding: var(--spacing) calc(var(--spacing) * 2);
-  transform: translate(0, -2rem);
-  border-top-left-radius: 2rem;
-  background: var(--containers);
-  padding-bottom: 0;
-  width: 100%;
-}
-
-.text h3 {
-  margin: 0;
-  padding: calc(var(--spacing) / 2) 0;
-  font-size: 1.8rem;
-}
-
-.preview:after {
-  content: "";
-  display: block;
-  background: #63699e4c;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  background: var(--folder)
 }
 
 .preview:before {
-  background-image: radial-gradient(
-    circle at 100% 0%,
-    transparent 0%,
-    transparent 30px,
-    var(--containers) 30px
-  );
-  content: "";
-  width: 30px;
-  right: 0;
+  width: calc(100% - 18px);
+  background: rgb(26, 38, 202);
+  left: 5px;
+  top: 5px;
+  margin: 4px;
+  border-radius: 10px;
+  opacity: .4;
+  height: calc(100% - 18px);
   position: absolute;
-  height: 30px;
-  transform: scaleX(-1);
-  bottom: 1.86rem;
-  z-index: 1;
+  content: '';
+  border-bottom-right-radius: 1.6rem;
 }
 
 .preview img {
   object-fit: cover;
+  height: 100%;
   width: 100%;
-  height: 100%;
-  z-index: 0;
-  position: relative;
 }
 
+.project .text {
+  transform: translateY(-3.4rem);
+  border-radius: 10px;
+}
 
-.emoji {
+.project .title::before {
+  content: '';
   position: absolute;
-  opacity:0;
-  transition: .6s;
-  right: 1rem;
-  top: 1rem;
-  font-size:3.2rem;
-}
-
-article:hover .emoji {
-  animation: enter 1s 1, bounce 3s infinite;
-}
-
-@keyframes enter {
-  from {
-    opacity: 0;
-    transform: scale(1.2)
-  }
-  to {
-    opacity: 1;
-    transform: scale(1)
-  }
-}
-
-.emoji span {
-  transition: .6s;
-  display: block;
-  animation:bounce 3.2s infinite;
-}
-
-
-.little-guy-pixel {
-  width: 1px;
-  height: 1px;
-  margin-left:2px;
-  background: transparent;
-  box-shadow: 18px 1px #000000, 26px 1px #000000, 17px 2px #000000, 18px 2px white, 19px 2px #000000, 25px 2px #000000, 26px 2px white, 27px 2px #000000, 16px 3px #000000, 17px 3px white, 18px 3px white, 19px 3px #000000, 25px 3px #000000, 26px 3px white, 27px 3px white, 28px 3px #000000, 15px 4px #000000, 16px 4px white, 17px 4px white, 18px 4px white, 19px 4px white, 20px 4px #000000, 24px 4px #000000, 25px 4px white, 26px 4px white, 27px 4px white, 28px 4px white, 29px 4px #000000, 14px 5px #000000, 15px 5px white, 16px 5px white, 17px 5px white, 18px 5px #ff6c6c, 19px 5px white, 20px 5px #000000, 24px 5px #000000, 25px 5px white, 26px 5px #ff6c6c, 27px 5px white, 28px 5px white, 29px 5px white, 30px 5px #000000, 13px 6px #000000, 14px 6px white, 15px 6px white, 16px 6px white, 17px 6px #ff6c6c, 18px 6px #ff6c6c, 19px 6px white, 20px 6px #000000, 21px 6px #000000, 22px 6px #000000, 23px 6px #000000, 24px 6px #000000, 25px 6px white, 26px 6px #ff6c6c, 27px 6px #ff6c6c, 28px 6px white, 29px 6px white, 30px 6px #000000, 12px 7px #000000, 13px 7px white, 14px 7px white, 15px 7px white, 16px 7px white, 17px 7px white, 18px 7px white, 19px 7px white, 20px 7px white, 21px 7px white, 22px 7px white, 23px 7px white, 24px 7px white, 25px 7px white, 26px 7px white, 27px 7px white, 28px 7px white, 29px 7px white, 30px 7px white, 31px 7px #000000, 12px 8px #000000, 13px 8px white, 14px 8px white, 15px 8px white, 16px 8px white, 17px 8px white, 18px 8px white, 19px 8px white, 20px 8px white, 21px 8px white, 22px 8px white, 23px 8px white, 24px 8px white, 25px 8px white, 26px 8px white, 27px 8px white, 28px 8px white, 29px 8px white, 30px 8px white, 31px 8px #000000, 11px 9px #000000, 12px 9px white, 13px 9px white, 14px 9px white, 15px 9px #000000, 16px 9px #000000, 17px 9px white, 18px 9px white, 19px 9px white, 20px 9px white, 21px 9px white, 22px 9px white, 23px 9px white, 24px 9px white, 25px 9px white, 26px 9px #000000, 27px 9px #000000, 28px 9px white, 29px 9px white, 30px 9px white, 31px 9px white, 32px 9px #000000, 11px 10px #000000, 12px 10px white, 13px 10px white, 14px 10px white, 15px 10px #000000, 16px 10px #000000, 17px 10px #000000, 18px 10px white, 19px 10px white, 20px 10px white, 21px 10px white, 22px 10px white, 23px 10px white, 24px 10px white, 25px 10px #000000, 26px 10px #000000, 27px 10px #000000, 28px 10px white, 29px 10px white, 30px 10px white, 31px 10px white, 32px 10px #000000, 11px 11px #000000, 12px 11px white, 13px 11px white, 14px 11px white, 15px 11px var(--cry), 16px 11px #000000, 17px 11px #000000, 18px 11px white, 19px 11px white, 20px 11px white, 21px 11px white, 22px 11px white, 23px 11px white, 24px 11px white, 25px 11px #000000, 26px 11px #000000, 27px 11px var(--cry), 28px 11px white, 29px 11px white, 30px 11px white, 31px 11px white, 32px 11px #000000, 11px 12px #000000, 12px 12px white, 13px 12px white, 14px 12px white, 15px 12px var(--cry), 16px 12px white, 17px 12px white, 18px 12px white, 19px 12px white, 20px 12px #000000, 21px 12px #000000, 22px 12px #000000, 23px 12px white, 24px 12px white, 25px 12px white, 26px 12px white, 27px 12px var(--cry), 28px 12px white, 29px 12px white, 30px 12px white, 31px 12px white, 32px 12px #000000, 11px 13px #000000, 12px 13px white, 13px 13px var(--loved), 14px 13px var(--loved), 15px 13px var(--lovedOrCry), 16px 13px white, 17px 13px white, 18px 13px white, 19px 13px white, 20px 13px white, 21px 13px #000000, 22px 13px white, 23px 13px white, 24px 13px white, 25px 13px white, 26px 13px white, 27px 13px var(--lovedOrCry), 28px 13px var(--loved), 29px 13px var(--loved), 30px 13px white, 31px 13px white, 32px 13px #000000, 10px 14px #000000, 11px 14px white, 12px 14px white, 13px 14px var(--loved), 14px 14px var(--loved), 15px 14px var(--lovedOrCry), 16px 14px white, 17px 14px white, 18px 14px white, 19px 14px white, 20px 14px #000000, 21px 14px white, 22px 14px #000000, 23px 14px white, 24px 14px white, 25px 14px white, 26px 14px white, 27px 14px var(--lovedOrCry), 28px 14px var(--loved), 29px 14px var(--loved), 30px 14px white, 31px 14px white, 32px 14px white, 33px 14px #000000, 10px 15px #000000, 11px 15px white, 12px 15px white, 13px 15px white, 14px 15px white, 15px 15px var(--cry), 16px 15px white, 17px 15px white, 18px 15px #000000, 19px 15px #000000, 20px 15px white, 21px 15px white, 22px 15px white, 23px 15px #000000, 24px 15px #000000, 25px 15px white, 26px 15px white, 27px 15px var(--cry), 28px 15px white, 29px 15px white, 30px 15px white, 31px 15px white, 32px 15px white, 33px 15px #000000, 11px 16px #000000, 12px 16px white, 13px 16px white, 14px 16px white, 15px 16px var(--cry), 16px 16px white, 17px 16px white, 18px 16px white, 19px 16px white, 20px 16px white, 21px 16px white, 22px 16px white, 23px 16px white, 24px 16px white, 25px 16px white, 26px 16px white, 27px 16px var(--cry), 28px 16px white, 29px 16px white, 30px 16px white, 31px 16px white, 32px 16px #000000, 12px 17px #000000, 13px 17px #000000, 14px 17px white, 15px 17px var(--cry), 16px 17px white, 17px 17px white, 18px 17px white, 19px 17px white, 20px 17px white, 21px 17px white, 22px 17px white, 23px 17px white, 24px 17px white, 25px 17px white, 26px 17px white, 27px 17px var(--cry), 28px 17px white, 29px 17px white, 30px 17px #000000, 31px 17px #000000, 14px 18px #000000, 15px 18px var(--cry), 16px 18px white, 17px 18px white, 18px 18px white, 19px 18px white, 20px 18px white, 21px 18px white, 22px 18px white, 23px 18px white, 24px 18px white, 25px 18px white, 26px 18px white, 27px 18px var(--cry), 28px 18px white, 29px 18px #000000, 15px 19px #000000, 16px 19px #000000, 17px 19px white, 18px 19px white, 19px 19px white, 20px 19px white, 21px 19px white, 22px 19px white, 23px 19px white, 24px 19px white, 25px 19px white, 26px 19px white, 27px 19px #000000, 28px 19px #000000, 15px 20px #000000, 16px 20px white, 17px 20px white, 18px 20px white, 19px 20px white, 20px 20px white, 21px 20px white, 22px 20px white, 23px 20px white, 24px 20px white, 25px 20px white, 26px 20px white, 27px 20px white, 28px 20px #000000, 14px 21px #000000, 15px 21px white, 16px 21px white, 17px 21px white, 18px 21px white, 19px 21px var(--loved), 20px 21px var(--loved), 21px 21px white, 22px 21px white, 23px 21px var(--loved), 24px 21px var(--loved), 25px 21px white, 26px 21px white, 27px 21px white, 28px 21px white, 29px 21px #000000, 13px 22px #000000, 14px 22px white, 15px 22px white, 16px 22px white, 17px 22px white, 18px 22px white, 19px 22px var(--loved), 20px 22px var(--loved), 21px 22px var(--loved), 22px 22px var(--loved), 23px 22px var(--loved), 24px 22px var(--loved), 25px 22px white, 26px 22px white, 27px 22px white, 28px 22px white, 29px 22px white, 30px 22px #000000, 12px 23px #000000, 13px 23px white, 14px 23px white, 15px 23px white, 16px 23px #000000, 17px 23px white, 18px 23px white, 19px 23px var(--loved), 20px 23px var(--loved), 21px 23px var(--loved), 22px 23px var(--loved), 23px 23px var(--loved), 24px 23px var(--loved), 25px 23px white, 26px 23px white, 27px 23px #000000, 28px 23px white, 29px 23px white, 30px 23px white, 31px 23px #000000, 12px 24px #000000, 13px 24px white, 14px 24px white, 15px 24px #000000, 16px 24px #000000, 17px 24px white, 18px 24px white, 19px 24px white, 20px 24px var(--loved), 21px 24px var(--loved), 22px 24px var(--loved), 23px 24px var(--loved), 24px 24px white, 25px 24px white, 26px 24px white, 27px 24px #000000, 28px 24px #000000, 29px 24px white, 30px 24px white, 31px 24px #000000, 13px 25px #000000, 14px 25px #000000, 16px 25px #000000, 17px 25px white, 18px 25px white, 19px 25px white, 20px 25px white, 21px 25px var(--loved), 22px 25px var(--loved), 23px 25px white, 24px 25px white, 25px 25px white, 26px 25px white, 27px 25px #000000, 29px 25px #000000, 30px 25px #000000, 16px 26px #000000, 17px 26px white, 18px 26px white, 19px 26px white, 20px 26px white, 21px 26px white, 22px 26px white, 23px 26px white, 24px 26px white, 25px 26px white, 26px 26px white, 27px 26px #000000, 17px 27px #000000, 18px 27px white, 19px 27px white, 20px 27px white, 21px 27px white, 22px 27px white, 23px 27px white, 24px 27px white, 25px 27px white, 26px 27px #000000, 17px 28px #000000, 18px 28px white, 19px 28px white, 20px 28px white, 21px 28px #000000, 22px 28px #000000, 23px 28px white, 24px 28px white, 25px 28px white, 26px 28px #000000, 17px 29px #000000, 18px 29px white, 19px 29px white, 20px 29px #000000, 23px 29px #000000, 24px 29px white, 25px 29px white, 26px 29px #000000, 17px 30px #000000, 18px 30px white, 19px 30px white, 20px 30px #000000, 23px 30px #000000, 24px 30px white, 25px 30px white, 26px 30px #000000, 17px 31px #000000, 18px 31px white, 19px 31px white, 20px 31px #000000, 23px 31px #000000, 24px 31px white, 25px 31px white, 26px 31px #000000, 18px 32px #000000, 19px 32px #000000, 24px 32px #000000, 25px 32px #000000;
-  transform:scale(3.8) translate(-800%, -700%);
-}
-
-
-
-.little-guy-speech {
-  position:absolute;
-  z-index:9;
-  top: 0;
+  z-index: -1;
+  top: 4px;
   left: 0;
-}
-.speech {
-  background: white;
-  color:black;
-  padding:4px;
-  width: 50%;
-  transform: translate(80px, -40px);
-  position: relative;
-  font-size:20px;
-  font-family: 'VT323', monospace;
-}
-.speech span.top, .speech span.bottom {
-  position:absolute;
-  display:block;
-  height:calc(100% - 8px);
-  top:4px;
-  left:-4px;
-  width:4px;
-  background: white;
+  width: 200px;
+  height: 100px;
+  background: var(--folder);
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 50 L 0 50 z');
 }
 
-.speech span.bottom, .speech span.bottom:before {
-  left: auto;
-  right:-4px;
+.text p {
+  margin-top: -1rem;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid var(--folder);
+  background: var(--folder);
 }
 
-.speech span.top:after {
-  content:'';
-  position:absolute;
-  bottom:0;
-  width:4px;
-  height:4px;
-  box-shadow: 24px 8px white, 20px 8px white, 16px 16px white, 20px 12px white;
-}
-
-
-.little-guy {
-width:100px;
-position:relative;
-height:100px;
-  animation: float 4s infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translate3d(0,0,0) scale3d(1.2, 1.18, 1);
-  }
-  50% {
-    transform: translate3d(0, 1rem, 0) scale3d(1.22, 1.2, 1.2);
-  }
-  100% {
-    transform: translate3d(0,0,0) scale3d(1.2, 1.2, 1);
-  }
-}
-
-  .little-guy.sad-true{
-    --cry: skyblue;
-    --lovedOrCry: skyblue;
-  }
-  .little-guy.fed-true, .little-guy:hover{
-      --loved: #ff8080;
-      --lovedOrCry: #ff8080;
-  }
-
-.little-guy {
-  transform:translate(8px, 0);
-  z-index:1;
-  --loved: white;
-  --cry: white;
-  --lovedOrCry: white;
-}
-
-article .emoji span{
-  transform: rotate(-20deg)
-}
-
-article:nth-of-type(2) .emoji span{
-  transform: rotate(30deg)
-}
-
-article:nth-of-type(3) .emoji span {
-  transform: rotate(-10deg)
-}
-
-article:nth-of-type(4) .emoji span {
-  transform: rotate(20deg)
-}
-
-@keyframes bounce {
-  50% {
-       transform:translateY(-2px) scale(1.02);
-  }
-  
-}
-
-
-#featured-work article:hover .emoji{
-  opacity: 1;
-  z-index: 4;
-}
-
-#featured-work article {
-  width: 33%;
-  border-radius: 0.6rem;
-  position: relative;
-  transition: box-shadow 0.4s;
-  background: var(--containers);
-  box-shadow: 0px 0px 0px 2px rgba(67, 77, 113, 0),
-    0px 0px 4px 20px rgba(67, 77, 113, 0);
-}
-
-#featured-work:before,
-#featured-work:after {
-  content: "";
-  height: 100%;
-  pointer-events: none;
-  top: 0;
-  left: 0rem;
-  display: block;
-  position: sticky;
-  width: 150px;
-  margin-right: -180px;
-  background: linear-gradient(to left, transparent, var(--background));
-  z-index: 2;
-}
-
-#featured-work:after {
-  background: linear-gradient(to right, transparent, var(--background));
-  right: -2rem;
-}
-
-#featured-work article:hover {
-  box-shadow: 0px 0px 0px 0px var(--containers),
-    0px 0px 0px 0px var(--containers) !important;
-}
-
-.buttons {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(20px);
-  transition: 0.6s;
-  border-radius: 8px;
-  z-index: 2;
-  background: #4651a787;
-}
-
-article:hover .buttons {
-  opacity: 1;
-}
-
-.buttons {
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-.preview img {
-  object-position: top;
-}
-
-#featured-work {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  overflow-x: auto;
-  overflow-y: hidden;
-  height: 60vh;
-  overscroll-behavior: contain;
-}
-
-.label {
-  position: absolute;
-  z-index: 3;
-  background: var(--background);
+.text p,
+.text .title {
   padding: var(--spacing);
-  font-size: 1.8rem;
-  top: 2rem;
-  left: var(--spacing);
-  border-bottom-right-radius: 2rem;
 }
 
-.label:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: calc(100% + 1rem);
-  height: 2rem;
-  top: -2rem;
-  background: var(--background);
-}
-
-.label:after {
-  background-image: radial-gradient(
-    circle at 100% 0%,
-    transparent 0%,
-    transparent 30px,
-    var(--background) 30px
-  );
-  content: "";
-  width: 30px;
-  right: 0;
-  position: absolute;
-  height: 30px;
-  transform: scaleY(-1);
-  top: 0px;
-  right: -30px;
-}
-
-#daynight-toggle {
-  position: absolute;
-  width: 3rem;
-  border: 0;
-  height: 3rem;
-  background: var(--background);
-  right: 0;
-  cursor: pointer;
+.text h3 {
   font-size: 1.4rem;
-  padding: var(--spacing);
-  border-bottom-left-radius: 2rem;
+
 }
 
-#daynight-toggle:before {
-  background-image: radial-gradient(
-    circle at 100% 0%,
-    transparent 0%,
-    transparent 30px,
-    var(--background) 30px
-  );
-  content: "";
-  width: 30px;
-  right: 0;
+
+.text .pill {
+  transform: translateY(-12px);
+  border-radius: 1rem;
+  padding: calc(var(--spacing) / 2) var(--spacing);
+  background: var(--folder);
+  filter: brightness(90%);
+  box-shadow: 0 0 10px 0 var(--folder);
+}
+
+.stretched {
   position: absolute;
-  height: 30px;
-  top: 0px;
-  left: -28px;
-  transform: scaleX(-1) scaleY(-1);
-}
-
-#daynight-toggle:after {
-  background-image: radial-gradient(
-    circle at 100% 0%,
-    transparent 0%,
-    transparent 30px,
-    var(--background) 30px
-  );
-  content: "";
-  width: 30px;
-  right: 0;
-  position: absolute;
-  height: 30px;
-  transform: scaleX(-1) scaleY(-1);
-  bottom: -28px;
-  right: 0px;
-}
-
-.toggle {
-  display: block;
-  padding: var(--spacing);
-}
-
-.dark-mode-theme .toggle:before {
-  content: "🌕";
-}
-
-.toggle:before {
-  content: "🌑";
-}
-
-footer nav a {
-  color: white;
-}
-
-.video-button {
-  cursor: pointer;
-  position: absolute;
-  left:  1rem;
+  width: 100%;
+  height: 100%;
   z-index: 9;
-  top: 1rem;
-  min-height: 2rem;
-  min-width: 2rem;
-  border-radius: .4rem;
-  opacity: .4;
-  background:rgba(96, 93, 252, 1);
-  padding: calc(var(--spacing) / 2);
-  border: none;
+  top: 0;
+  left: 0;
+}
+
+.project-container {
+  position: relative;
+  margin: auto;
+}
+
+.project-container:before,
+.project-container:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  top: 0;
+  pointer-events: none;
+  z-index: 9;
+  background: linear-gradient(to right, var(--background), transparent)
+}
+
+.project-container:before {
+  left: 0;
+}
+
+.project-container:after {
+  right: 0;
+  background: linear-gradient(to right, transparent, var(--background))
+}
+
+.pagination {
+text-align: center;
+width: 100%;
+}
+
+.pagination button {
+  font-family: "VT323", monospace;
+  font-size: 1.8rem;
+  margin: var(--spacing) auto;
+  --s: 1.4rem; 
+  border: 8px solid var(--folder); 
+  padding: 10px;
+  width: 300px;
+  background: var(--background);
+  mask: 
+    conic-gradient(#000 0 0) content-box,
+    conic-gradient(at var(--s) var(--s),#0000 75%,#000 0) 
+    0 0/calc(100% - var(--s)) calc(100% - var(--s));
+
+}
+
+.pagination button:after {
+  content:'>';
+  margin-left: var(--spacing)
+}
+
+.projects {
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease-in-out;
+  perspective: 1000px;
+
+}
+
+section h2 {
+  text-align: center;
+}
+
+section h2 span {
+  padding: var(--spacing);
+  display: inline-block;
+  font-size: 2rem;
+  margin: var(--spacing) auto;
+}
+
+.project {
+  position: relative;
+  flex: 0 0 33.33%;
+  transition: transform .6s;
+}
+
+.project-left,
+.project-right {
+  transform: scale(.8);
+  transition: .6s ease;
+}
+
+.project-left {
+  transform: scale(.8) rotateY(-15deg);
+}
+
+.project img {
+  pointer-events: none;
+  border-radius: 10px;
+  border-bottom-right-radius: 1.6rem;
+}
+
+.project-right {
+  transform: scale(.8) rotateY(15deg);
+}
+
+.project-center {
+  transform: scale(1) rotateY(0);
+}
+
+.project-offscreen-right {
+  transform: scale(.6) rotateY(15deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg)
+  }
+
+  100% {
+    transform: rotateY(-15deg)
+  }
+}
+
+.skills {
+  margin: var(--spacing);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: calc(var(--spacing) * 1.4);
+  grid-template-areas:
+    "one one four four"
+    "one one four four"
+    "three two two five";
+}
+
+.skills article:first-child {
+  grid-area: one;
+}
+
+.skills article:nth-of-type(2) {
+  grid-area: two;
+  background: rgb(121, 51, 128);
+}
+
+.skills article:nth-of-type(3) {
+  grid-area: three;
+
+  background: rgb(69, 104, 179);
+}
+
+.skills article:nth-of-type(4) {
+  grid-area: four;
+  background: rgb(151, 48, 106);
+}
+
+.skills article:nth-of-type(5) {
+  grid-area: five;
+  background: rgb(23, 93, 109);
+}
+
+.skills article {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  background: var(--folder);
+}
+
+.skills h3 {
+  font-size: 1.6rem;
+  padding: var(--spacing);
+  border-radius: 10px 10px 0 0;
+  background: rgba(255, 255, 255, .12);
+}
+
+.skill article {
+  position: relative;
+}
+
+.skills h3 span {
+  font-family: 'open sans';
+  font-size: 1rem;
+  padding: 4px 10px;
+  border-radius: 2rem;
+  background: rgba(48, 4, 57, 0.2);
+}
+
+.sparkle {
+  z-index: 9;
+  position: absolute;
+  transform: scale(.6) translate(-90%, -40%);
+}
+
+.sparkle:nth-of-type(2) {
+  bottom: 0;
+  right: 0;
+  transform: scale(.4) translate(80%, 110%);
+
+}
+
+.sparkle span {
+  height: 100px;
+  width: 80px;
+  display: block;
+  animation: sparkle 3.4s ease infinite;
+  mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+  background: rgb(255, 187, 0);
+}
+
+@keyframes sparkle {
+  50% {
+    transform: scale(.8) rotate(10deg);
+  }
+}
+
+ul {
+  padding: var(--spacing);
+  margin-left: var(--spacing);
+}
+
+ul li {
+  padding: 4px;
+}
+
+.funky-underline {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.funky-underline:before {
+  height: .8rem;
+  margin-top: 2rem;
+  width: 100%;
+  content: '';
+  position: absolute;
+  aspect-ratio: 6;
+  filter: brightness(80%);
+  --c: transparent 64%, #222869, transparent 101%;
+  background:
+    radial-gradient(35% 146% at 50% 159%, var(--c)) 0 0,
+    radial-gradient(35% 146% at 50% -59%, var(--c)) 25% 100%;
+  background-size: calc(100%/3) 50%;
+  background-repeat: repeat-x;
+  clip-path: inset(0 100% 0 0);
+  animation: l5 3.2s infinite linear;
+}
+
+@keyframes l5 {
+  50% {
+    clip-path: inset(0)
+  }
+
+  to {
+    clip-path: inset(0 0 0 100%)
+  }
+}
+
+
+.passions article {
+  margin: var(--spacing) auto;
+  position: relative;
+  background: var(--folder);
+  text-align: left;
+  line-height: 1.4rem;
+  --s: 1rem;
+  --w: 90%;
+  width: round(var(--w), 4*var(--s));
+  height: 320px;
+  padding: var(--s);
+  border: var(--s) solid #0000;
+  box-sizing: border-box;
+  border-radius: calc(3.5*var(--s));
+  mask:
+    radial-gradient(calc(sqrt(2)*var(--s)), #000 calc(100% - 1px), #0000),
+    conic-gradient(#000 0 0) content-box,
+    radial-gradient(calc(sqrt(2)*var(--s)), #0000 100%, #000 calc(100% + 1px)) var(--s) var(--s) padding-box;
+  mask-size: calc(var(--s)*4) calc(var(--s)*4);
+}
+
+.p p {
+  line-height: 200%;
+  padding-bottom: var(--spacing);
+}
+
+.passions {
+  --s: 159px;
+  --c1: rgba(100, 86, 253, 0.138);
+  --c2: #242251;
+  --_g: #0000 52%, var(--c1) 54% 57%, #0000 59%;
+  background:
+    radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2),
+    radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0,
+    radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
+    radial-gradient(farthest-side at 50% -33.33%, var(--_g)),
+    var(--c2);
+  background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
+  border-radius: 1rem;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  padding: calc(var(--spacing) * 2);
+
+}
+
+.passions h2 {
+  font-size: 2.4rem;
+  text-align: left;
 
 }
 
 
 
-div:hover:has(.video-button) .video-button {
-  opacity: 1;
+@media screen and (min-width: 871px) {
+
+  .projects.animation-right,
+  .projects.animation-left {
+    animation: slide 2s ease forwards;
+  }
+
+  @keyframes slide {
+    to {
+      opacity: 1
+    }
+  }
+
+  .projects.animation-right .project {
+    animation: slideRight 2s ease forwards
+  }
+
+  .projects.animation-right .project:nth-of-type(1) {
+    animation: slideOffRight 2s ease forwards
+  }
+
+  .projects.animation-right .project:nth-of-type(2) {
+    animation: slideRightLeft 2s ease forwards
+  }
+
+  .projects.animation-right .project:nth-of-type(4) {
+    animation: slideRightRight 2s ease forwards
+  }
+
+
+  .projects.animation-left .project-right {
+    animation: slideOffLeft 2s ease forwards
+  }
+
+  .projects.animation-left .project-offscreen-left {
+    transform: translateX(-20%) scale(.6) rotateY(-15deg);
+    opacity: 0 !important;
+    animation: enterToLeft 1.4s ease forwards
+  }
+
+  .projects.animation-left .project-left {
+    animation: slideInLeft 2s ease forwards;
+  }
+
+  .projects.animation-left .project-center {
+    transition: ease-in-out;
+    animation: slideOutLeft 2s ease forwards
+  }
+
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(-100%) scale(1) rotateY(0deg);
+    }
+
+    to {
+      transform: translateX(0%) scale(.8) rotateY(15deg);
+    }
+  }
+
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%) scale(.8) rotateY(15deg);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%) scale(.8) rotateY(-15deg);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+  @keyframes enterToLeft {
+    from {
+      transform: translateX(0) (.8) rotateY(-15deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0) (.8) rotateY(-15deg);
+    }
+  }
+
+
+
+
+
+  @keyframes slideOffRight {
+    to {
+      opacity: 0;
+      transform: translateX(-100%) scale(.4) rotateY(-15deg);
+    }
+  }
+
+
+  @keyframes slideRightLeft {
+    to {
+      transform: translateX(-100%) scale(.8) rotateY(-15deg);
+    }
+  }
+
+  @keyframes slideRightRight {
+    to {
+      transform: translateX(-100%) scale(.8) rotateY(15deg);
+    }
+  }
+
+  @keyframes slideRight {
+    to {
+      opacity: 1;
+      transform: translateX(-100%)
+    }
+  }
+
+
+
+  @keyframes slideOffLeft {
+    to {
+      transform: translateX(100%) scale(.6) rotateY(15deg);
+    }
+  }
+
+  @keyframes slideLeft {
+    to {
+      transform: translateX(100%)
+    }
+  }
+
 }
 
 @media screen and (max-width: 870px) {
-  .other-content {
-   display: none;
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  header .half-width {
+    width: 100%;
+  }
+
+  nav {
+    margin: var(--spacing) auto;
+  }
+
+  .content {
+    padding: var(--spacing);
+  }
+
+  header {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section {
+    margin: var(--spacing) 0;
+  }
+
+  .skills {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three five"
+      "four four";
+  }
+
+  .skills article:nth-of-type(4) {
+    display: none;
+  }
+
+  main,
+  header,
+  nav {
+    width: 100%;
+  }
+
+  .projects.animation-right,
+  .projects.animation-left {
+    animation: slide 0.2s ease forwards;
+  }
+
+  @keyframes slide {
+    to {
+      opacity: 1
+    }
+  }
+
+  .project {
+    margin: 0 10vw;
+    flex: 0 0 80% !important;
+    transform: rotateY(0);
+  }
+
+  .projects.animation-right .project {
+    animation: 1s 1 slideToRight forwards;
+  }
+
+  .projects.animation-left .project {
+    animation: 1s 1 slideToLeft forwards;
+  }
+
+  @keyframes slideLeft {
+    to {
+      transform: translateX(100%)
+    }
+  }
+
+  @keyframes slideRight {
+    to {
+      opacity: 1;
+      transform: translateX(-100%)
+    }
   }
 
 }
 
 @media screen and (max-width: 800px) {
-  #featured-work article {
-    width: 90%;
+
+  .passions {
+    width: 100%;
   }
 
-  .hide-on-mobile {
-    display: none;
+  .passions {
+    padding: 2rem;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
-  .text-content {
-    padding: calc(var(--spacing) * 2);
-  }
-  #daynight-toggle {
-    display: none;
-  }
-
-  #featured-work:before,
-#featured-work:after {
-  display: none!important
-}
-
-  .links a {
-    padding: var(--spacing);
-    border-right: 0;
-  }
-  .links a:last-of-type, .links a:first-of-type{
-    display: none;
-  }
-
-  section article,
-  section > *,
-  article {
-    margin: var(--spacing);
-    text-align: center;
-    width: 100%!important;
-  }
-
-  #featured-work article {
-    margin-left:-5%;
-    width: 120% !important;
-  }
-
-  footer nav {
-    min-width: auto !important;
-    width: 90vw !important;
-    padding: 0 !important;
-    gap: 0;
-    & a {
-      margin: 0.4rem !important;
-      padding: 0.4rem !important;
-    }
+  .passions article {
+    mask: none;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    margin: 2rem;
   }
 }
 
-.transition:before, .transition:after {
-  content:'';
-  z-index:99;
-  transition: 1s ease-in-out;
-  width: 50vw;
-  top:0;
-  background: var(--background);
-  height: 100vh;
-  position: fixed;
-  display: block;
+@media screen and (max-width: 600px) {
+  .skills {    
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "five five";
+  }
 }
-
-.transition:after {
-  right: 0;
-  top:0;
-}
-
-.transition-enter:before {
-    transition-delay: .4s;
-    transform: translatex(-50vw);
-}
-
-.transition-enter:after {
-  transition-delay: .4s;
-   transform: translatex(50vw);
-}
-
-.transition-exit:before, .transition-exit:after {
-      transform:translatex(0)
-}
-
 
 @media (prefers-color-scheme: dark) {
   html {

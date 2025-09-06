@@ -32,6 +32,11 @@ export default function Home() {
             <header className={headerClasses}>
                 <h1>Theme Builder</h1>
                 <p>Build and customize a custom tumblr theme without any code.</p>
+                <p className={styles.skill}>
+                    <span>React</span>
+                    <span>Site builder</span>
+                    <span>CSS</span>
+                </p>
             </header>
             <article className={styles.about}>
                 <h2>About the project</h2>
