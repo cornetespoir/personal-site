@@ -1,93 +1,93 @@
-import { FeaturedProject } from '@/components/FeaturedProject'
 import { projects } from './projects'
-import { useEffect, useRef, WheelEvent } from 'react'
-import clsx from 'clsx'
-import styles from './page.module.css'
 import Link from 'next/link'
-import { usePageContext } from './PageContext'
-import { TransitionType } from '@/types'
+import { Projects } from '@/components/Projects'
 
 export function PageContents() {
 
-    const featuredWorkRef = useRef<HTMLDivElement | null>(null)
-    const { setTransition} = usePageContext()
-    function horizontalScrolling(e: WheelEvent<HTMLDivElement>) {
-        if (featuredWorkRef.current == null) return
-        e.preventDefault()
-        featuredWorkRef.current.scrollLeft += e.deltaY;
-    }
-    const headerClasses = clsx(
-        'main-header flex space-around',
-        styles.header
-    )
-    const navClasses = clsx(
-        'flex space-around',
-        styles.nav
-    )
-    useEffect(() => {
-        setTransition(null)
-        setTransition(TransitionType.enter)
-    }, [])
+
     return (
         <>
-            <header className={headerClasses}>
-                <Link href='/project/css' target='_blank' id='daynight-toggle'
-                    className='flex centered justify-center'>
-                    🎨<span className='sr-text'>Open the CSS Art Gallery</span>
-                </Link>
-                <nav className={navClasses}>
-                    <Link href='/'>Home</Link>
-                    <Link href='/about' target='_blank'>About</Link>
-                    <Link href='https://egg.design/tagged/blog' target='_blank'>Blog</Link>
-                </nav>
-                <div className='flex full space-between align-center'>
-                    <div className='text-content'>
-                        <h1>Hi! I&apos;m <span className='confetti'>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            Bridgette</span></h1>
-                        <p>I&apos;m  a front-end developer and designer.</p>
-                    </div>
-                    <div className='other-content'>
-                        <div className='little-guy'>
-                            <div className='little-guy-pixel'></div>
-                        </div>
+            <nav className="flex space-around">
+                <Link href="/">Home</Link>
+                <Link target="_blank" href="/about">About</Link>
+                <Link target="_blank" href="https://egg.design/tagged/blog">Blog</Link>
+            </nav>
+            <header className='full-width flex align-center justify-center'>
+                <div className='half-width'>
+                    <div className='folder'>
+                        <h1> I'm <span className="confetti"><i></i><i></i><i></i><i></i><i></i><i></i>Bridgette</span>, a front-end developer</h1>
+                        <p>I develop responsive, accessible UI and love pushing the boundaries of CSS. </p>
                     </div>
                 </div>
-                <div className='links flex'>
-                    <Link href='https://www.tumblr.com/themes/by/eggdesign' target='_blank'>Tumblr themes
-                        <svg xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 512 512'>
-                            <path
-                                d='M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z' />
-                        </svg></Link>
-                    <Link href='https://github.com/cornetespoir' target='_blank'>Github <svg xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 512 512'>
-                        <path
-                            d='M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z' />
-                    </svg></Link>
-                    <Link href='https://codepen.io/cornetespoir' target='_blank'>Codepen <svg xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 512 512'>
-                        <path
-                            d='M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z' />
-                    </svg></Link>
+                <div className="pixel-container flex align-center justify-center">
+                    <div className='me'></div>
                 </div>
             </header>
             <main>
-                <h2 className='label'>
-                    Personal Projects
-                </h2>
-                <section id='featured-work' onWheel={horizontalScrolling} ref={featuredWorkRef}>
-                    {projects.map((project, index) =>
-                        <FeaturedProject
-                            key={index}
-                            project={project}
-                        />
-                    )}
+                <section>
+                    <h2>Skills</h2>
+                    <div className='skills'>
+                    <article>
+                        <div className='sparkle'><span></span></div>
+                        <h3><span>React</span> Development + Architecture</h3>
+                        <ul>
+                            <li>Building and maintaining reusable components with Storybook</li>
+                            <li>Context API for state management</li>
+                            <li>Utilizing built-in and custom hooks</li>
+                            <li>Unit testing with Jest</li>
+                            <li>SSR + dynamic routing with Next.js </li>
+                        </ul>
+                           <div className='sparkle'><span></span></div>
+                    </article>
+                    <article>
+                        <h3><span>Styling + UI</span> HTML5, CSS3, JavaScript</h3>
+                        <ul>
+                            <li>Responsive design with Flexbox and CSS Grid</li>
+                            <li>Semantic HTML</li>
+                            <li>WCAG standards, ARIA labels, screen-reader friendly UI</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3><span>Languages</span> Libraries + Frameworks</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Typescript</li>
+                            <li>GraphQL</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3><span>Workflow</span> Soft skills</h3>
+                        <ul>
+                            <li>Mentoring and teaching front end skills and best practices</li>
+                            <li>Collaboration with UI design teams</li>
+                            <li>Architecture discussions and documentation</li>
+                            <li>Explaining concepts and decisions to non-technical teams</li>
+                        </ul>
+                    </article>
+                     <article>
+                        <h3><span>Misc.</span> Also familiar with</h3>
+                        <ul>
+                            <li>C# / .NET</li>
+                            <li>React Native</li>
+                            <li>Vue</li>
+                            <li>Figma</li>
+                        </ul>
+                    </article>
+                    </div>
+                </section>
+                <section className='passions'>
+                    <article className='flex space-between'>
+                        <div className='content'>
+                            <h2 className='funky-underline'>Specializations</h2>
+                        <div className='p'>
+                            <p>I'm all about adding <span className='confetti'><i></i><i></i><i></i><i></i><i></i><i></i>whimsy</span> to web development. I like using fun shapes, animations, and interactive elements, all while keeping things as accessible as possible! While I use Bootstrap in my professional work, I like writing my CSS from scratch to explore what's possible with unique layouts and interactions.</p>
+                        </div>
+                        </div>
+                    </article>
+                </section>
+                <section>
+                    <h2><span>Misc. Projects</span></h2>
+                    <Projects projects={projects} />
                 </section>
             </main>
         </>

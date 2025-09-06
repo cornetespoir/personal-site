@@ -7,6 +7,7 @@ export interface Project {
     url?: string
     description?: string
     emoji?: string
+    id?: string
 }
 
 export enum TransitionType {
@@ -17,5 +18,7 @@ export interface PageContextType {
     transition: TransitionType | null
     setTransition: Dispatch<SetStateAction<TransitionType | null>>
 }
+
+export type Direction = 'left' | 'right'
 
 export const PageContext = createContext<PageContextType| undefined>(undefined)

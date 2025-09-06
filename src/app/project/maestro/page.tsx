@@ -6,7 +6,7 @@ import { Video } from "@/components/Video";
 import { FooterNav } from "@/components/FooterNav";
 
 export const metadata: Metadata = {
-  title: 'Project: Maestro',
+    title: 'Project: Maestro',
 }
 export default function Home() {
 
@@ -31,6 +31,12 @@ export default function Home() {
             <header className={headerClasses}>
                 <h1>Maestro</h1>
                 <p>A tumblr audio post playlist maker.</p>
+                <p className={styles.skill}>
+                    <span>React</span>
+                    <span>Next.JS</span>
+                    <span>Tumblr API</span>
+                    <span>CSS</span>
+                </p>
             </header>
             <article className={styles.about}>
                 <h2>About Maestro</h2>
@@ -38,13 +44,13 @@ export default function Home() {
                 <p>These playlist makers were very nostalgic for me, and I wanted to keep them going with modern tumblr posts.</p>
             </article>
 
-            
+
             <section className={sectionClasses}>
                 <article>
                     <h2>Animation and interaction highlights</h2>
                     <p>From a rotating disk to pulsing touch animations, I wanted to make the playlist fun to interact with and look at outside of just playing audio.</p>
                 </article>
-                    <Video src='/maestro-animations.mp4' className={styles.videoContainer} />
+                <Video src='/maestro-animations.mp4' className={styles.videoContainer} />
             </section>
 
             <section className={sectionClasses}>
@@ -63,7 +69,7 @@ export default function Home() {
             <FooterNav
                 footerClasses={footerClasses}
                 githubURL='https://github.com/cornetespoir/audio-playlist?tab=readme-ov-file#maestro'
-                siteStyles={styles.site} 
+                siteStyles={styles.site}
                 siteURL='https://maestro.bridgette.dev/' />
         </main>
     )
