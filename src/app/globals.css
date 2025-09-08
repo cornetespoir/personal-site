@@ -985,7 +985,14 @@ ul li {
 
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 980px) {
+    .project .pill { 
+    display: none!important;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
   * {
     box-sizing: border-box;
   }
@@ -1074,25 +1081,44 @@ ul li {
     }
   }
 
+    .projects {
+    align-items: center;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
 
-  .passions {
+  main, header {
     width: 100%;
+    border-radius: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+  .passions {
+    width: calc(100% - 1rem);
+    padding: 0;
+    border-radius: 4px;
+    margin: auto;
+    padding: var(--spacing);
   }
 
-  .passions {
-    padding: 2rem;
+  .passions :where(.article, .content) {
+    padding: calc(var(--spacing) / 2);
   }
 
   .passions article {
     mask: none;
+    border: 0;
     height: auto;
     margin: auto;
     padding: 0;
-    margin: 2rem;
+    border-radius: 4px;
+    width: calc(100% - .4rem);
+    padding: 10px;
+    text-align: center;
   }
+
 }
 
 @media screen and (max-width: 600px) {
