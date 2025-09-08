@@ -136,13 +136,11 @@
   clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
 }
 
-@media (prefers-color-scheme: dark) {
   :root {
     --background: #171637;
     --text: #fff;
     --containers: #1c2244;
   }
-}
 
 html,
 body {
@@ -315,6 +313,10 @@ h3,
 .buttons span {
   font-weight: normal;
   font-family: "VT323", monospace;
+}
+
+button, a {
+  color: white;
 }
 
 a {
@@ -1101,11 +1103,5 @@ ul li {
       "three three"
       "four four"
       "five five";
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
   }
 }
